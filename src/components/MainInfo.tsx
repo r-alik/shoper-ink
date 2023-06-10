@@ -3,12 +3,12 @@ import boxes from '/boxes.svg';
 import Picture, { PictureType, StylesType } from './Picture';
 
 const mainPic: PictureType = {
-  p1200: '/assets/jute-9-1200.webp',
-  p800: '/assets/jute-9-800.webp',
-  p360: '/assets/jute-9-360.webp',
-  jpg1200: '/assets/jute-9-1200.jpg',
-  jpg800: '/assets/jute-9-800.jpg',
-  jpg360: '/assets/jute-9-360.jpg',
+  p1200: '/images/jute-9-1200.webp',
+  p800: '/images/jute-9-800.webp',
+  p360: '/images/jute-9-360.webp',
+  jpg1200: '/images/jute-9-1200.jpg',
+  jpg800: '/images/jute-9-800.jpg',
+  jpg360: '/images/jute-9-360.jpg',
   alt: 'Shoper-ink Jute busket and glass candle on a desk',
 };
 
