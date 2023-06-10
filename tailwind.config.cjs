@@ -14,7 +14,7 @@ module.exports = {
         },
         pulse: {
           '0%, 100%': { opacity: 1, transform: 'scale(1)' },
-          '50%': { opaciti: 0.3, transform: 'scale(0.8)' },
+          '50%': { opacity: 0.3, transform: 'scale(0.8)' },
         },
       },
       animation: {
