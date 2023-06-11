@@ -1,7 +1,7 @@
 import Container from '../shared/Container';
+import GalleryItem from '../shared/GalleryItem';
 
-import pictures from '../data/pictures.json';
-import Picture, { PictureType, StylesType } from './Picture';
+import pictures from '../data/jute.json';
 
 const JuteAndJute = () => {
   return (
@@ -17,7 +17,11 @@ const JuteAndJute = () => {
         dolore hic voluptate porro dolorem modi? Quisquam, magnam ea.
       </p>
 
-      <ul className="w-full flex-grow p-2 border border-red-300 grid gap-[var(--gap)] grid-flow-col auto-cols-[48%] md:auto-cols-[32%] overflow-x-scroll scroll-p-4 snap-mandatory snap-x">
+      <ul
+        className="w-full flex-grow p-2 grid gap-[var(--gap)] grid-flow-col auto-cols-[80%] sm:auto-cols-[48%] md:auto-cols-[32%] overflow-x-scroll scroll-p-4 snap-mandatory snap-x
+       rounded-md backdrop-blur-md backdrop-saturate-150 bg-Peach
+       "
+      >
         {pictures.map(pic => {
           return (
             <li key={pic.p360}>
@@ -30,48 +34,4 @@ const JuteAndJute = () => {
   );
 };
 
-/*
-className="border border-red-300 w-full grid sm:grid-cols-2 xl:grid-cols-3 gap-2 px-2"
-*/
-
 export default JuteAndJute;
-
-interface GalleryItemShape {
-  id: string | number;
-  title: string;
-  picDetail: PictureType;
-  desc: string;
-  price: number;
-}
-
-const s: StylesType = {
-  picture: 'w-full border',
-  img: 'h-52 w-full object-cover object-top',
-};
-
-function GalleryItem({ picDetail }: { picDetail: PictureType }) {
-  return (
-    <div className="h-full flex flex-col justify-start items-stretch gap-4 border rounded-lg p-2 snap-start bg-gradient-to-br from-Peach to-white shadow-[10px_10px_20px_#8c8985,_-10px_-10px_20px_#ffffff] ">
-      <Picture picDetails={picDetail} styles={s} />
-      <div className="flex justify-between items-center p-2">
-        <h4>Назва</h4>
-        <span>id: asd9as87</span>
-      </div>
-
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, dicta
-        dolorum? Aspernatur minus sunt esse?
-      </p>
-      <p>
-        Цена: <span className="text-Accent-dark font-semibold"> 999</span>{' '}
-        <span>гривень</span>
-      </p>
-    </div>
-  );
-}
-
-/*
-border-radius: 8px;
-background: linear-gradient(145deg, #e5e0da, #ffffff);
-box-shadow:  10px 10px 20px #8c8985, -10px -10px 20px #ffffff;
-*/
