@@ -7,6 +7,7 @@
     "jpg1200": "/images/wine-1-1200.jpg",
     "jpg800": "/images/wine-1-800.jpg",
     "jpg360": "/images/wine-1-360.jpg",
+    "isAvailable": false,
     "alt": ""
   },
   {
@@ -17,6 +18,7 @@
     "jpg1200": "/images/wine-2-1200.jpg",
     "jpg800": "/images/wine-2-800.jpg",
     "jpg360": "/images/wine-2-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -27,6 +29,7 @@
     "jpg1200": "/images/wine-3-1200.jpg",
     "jpg800": "/images/wine-3-800.jpg",
     "jpg360": "/images/wine-3-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -37,6 +40,7 @@
     "jpg1200": "/images/wine-4-1200.jpg",
     "jpg800": "/images/wine-4-800.jpg",
     "jpg360": "/images/wine-4-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -47,6 +51,7 @@
     "jpg1200": "/images/wine-5-1200.jpg",
     "jpg800": "/images/wine-5-800.jpg",
     "jpg360": "/images/wine-5-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -57,6 +62,7 @@
     "jpg1200": "/images/wine-6-1200.jpg",
     "jpg800": "/images/wine-6-800.jpg",
     "jpg360": "/images/wine-6-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -67,6 +73,7 @@
     "jpg1200": "/images/wine-7-1200.jpg",
     "jpg800": "/images/wine-7-800.jpg",
     "jpg360": "/images/wine-7-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -77,6 +84,7 @@
     "jpg1200": "/images/wine-8-1200.jpg",
     "jpg800": "/images/wine-8-800.jpg",
     "jpg360": "/images/wine-8-360.jpg",
+    "isAvailable": false,
     "alt": ""
   },
   {
@@ -87,6 +95,7 @@
     "jpg1200": "/images/wine-9-1200.jpg",
     "jpg800": "/images/wine-9-800.jpg",
     "jpg360": "/images/wine-9-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -97,6 +106,7 @@
     "jpg1200": "/images/wine-10-1200.jpg",
     "jpg800": "/images/wine-10-800.jpg",
     "jpg360": "/images/wine-10-360.jpg",
+    "isAvailable": false,
     "alt": ""
   },
   {
@@ -107,6 +117,7 @@
     "jpg1200": "/images/wine-11-1200.jpg",
     "jpg800": "/images/wine-11-800.jpg",
     "jpg360": "/images/wine-11-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -117,6 +128,7 @@
     "jpg1200": "/images/wine-12-1200.jpg",
     "jpg800": "/images/wine-12-800.jpg",
     "jpg360": "/images/wine-12-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -127,6 +139,7 @@
     "jpg1200": "/images/wine-13-1200.jpg",
     "jpg800": "/images/wine-13-800.jpg",
     "jpg360": "/images/wine-13-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -137,6 +150,7 @@
     "jpg1200": "/images/wine-14-1200.jpg",
     "jpg800": "/images/wine-14-800.jpg",
     "jpg360": "/images/wine-14-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -147,6 +161,7 @@
     "jpg1200": "/images/wine-15-1200.jpg",
     "jpg800": "/images/wine-15-800.jpg",
     "jpg360": "/images/wine-15-360.jpg",
+    "isAvailable": false,
     "alt": ""
   }
 ]

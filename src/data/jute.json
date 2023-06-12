@@ -7,6 +7,7 @@
     "jpg1200": "/images/jute-1-1200.jpg",
     "jpg800": "/images/jute-1-800.jpg",
     "jpg360": "/images/jute-1-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -17,6 +18,7 @@
     "jpg1200": "/images/jute-2-1200.jpg",
     "jpg800": "/images/jute-2-800.jpg",
     "jpg360": "/images/jute-2-360.jpg",
+    "isAvailable": false,
     "alt": ""
   },
   {
@@ -27,6 +29,7 @@
     "jpg1200": "/images/jute-3-1200.jpg",
     "jpg800": "/images/jute-3-800.jpg",
     "jpg360": "/images/jute-3-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -37,6 +40,7 @@
     "jpg1200": "/images/jute-4-1200.jpg",
     "jpg800": "/images/jute-4-800.jpg",
     "jpg360": "/images/jute-4-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -47,6 +51,7 @@
     "jpg1200": "/images/jute-5-1200.jpg",
     "jpg800": "/images/jute-5-800.jpg",
     "jpg360": "/images/jute-5-360.jpg",
+    "isAvailable": false,
     "alt": ""
   },
   {
@@ -57,6 +62,7 @@
     "jpg1200": "/images/jute-6-1200.jpg",
     "jpg800": "/images/jute-6-800.jpg",
     "jpg360": "/images/jute-6-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -67,6 +73,7 @@
     "jpg1200": "/images/jute-7-1200.jpg",
     "jpg800": "/images/jute-7-800.jpg",
     "jpg360": "/images/jute-7-360.jpg",
+    "isAvailable": true,
     "alt": ""
   },
   {
@@ -77,6 +84,7 @@
     "jpg1200": "/images/jute-8-1200.jpg",
     "jpg800": "/images/jute-8-800.jpg",
     "jpg360": "/images/jute-8-360.jpg",
+    "isAvailable": false,
     "alt": ""
   }
 ]
