@@ -11,6 +11,7 @@ export interface PictureType {
   jpg800: string;
   jpg1200: string;
   alt?: string;
+  isAvailable: boolean;
 }
 
 export interface PictureTypeWithStyles extends PictureType {

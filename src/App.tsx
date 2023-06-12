@@ -1,4 +1,5 @@
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import JuteAndJute from './components/JuteAndJute';
 import MainInfo from './components/MainInfo';
@@ -16,6 +17,7 @@ function App() {
       <Testimonials />
       <Masterclass />
       <AboutMe />
+      <Footer />
     </>
   );
 }

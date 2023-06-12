@@ -1,12 +1,16 @@
 import Container from '../shared/Container';
 import GalleryItem from '../shared/GalleryItem';
+import knit from '/knit.svg';
 
 import pictures from '../data/jute.json';
 
 const JuteAndJute = () => {
   return (
     <Container idName="juteAndJute">
-      <h2 className="text-xl mb-2 sm:mb-2 font-semibold">Jute & Jute</h2>
+      <div className="text-xl font-semibold mb-2 w-full flex justify-center items-center gap-2">
+        <img src={knit} alt="" width={40} />
+        <h2>Jute & Jute</h2>
+      </div>
       <p className="mb-10 px-4 leading-relaxed first-line:tracking-widest indent-6 text-xl text-center">
         <span className="italic text-Accent-dark tracking-widest font-bold">
           Jute&Jute

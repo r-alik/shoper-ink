@@ -9,6 +9,7 @@ const mainPic: PictureType = {
   jpg1200: '/images/jute-9-1200.jpg',
   jpg800: '/images/jute-9-800.jpg',
   jpg360: '/images/jute-9-360.jpg',
+  isAvailable: true,
   alt: 'Shoper-ink Jute busket and glass candle on a desk',
 };
 
