@@ -17,7 +17,7 @@ const MenuMobile = () => {
         aria-expanded={isMobileMenuVisible ? true : false}
         className={`${
           isMobileMenuVisible ? 'fixed' : 'absolute'
-        } text-3xl text-white font-bold w-10 aspect-square border-2 rounded-md top-4 right-6 z-50 sm:hidden bg-Accent-light`}
+        } text-3xl text-white font-bold w-10 aspect-square border-2 rounded-md top-4 right-2 z-50 sm:hidden bg-Accent-light`}
         onClick={toggleNav}
       >
         <span className="sr-only">Menu</span>{' '}

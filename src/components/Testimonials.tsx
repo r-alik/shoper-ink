@@ -2,6 +2,7 @@ import Container from '../shared/Container';
 import shoperGirl from '/shopper-girl.svg';
 
 import testimonials from '../data/testimonials.json';
+import SectionTitle from '../shared/SectionTitle';
 
 const Testimonial = ({
   text,
@@ -15,7 +16,9 @@ const Testimonial = ({
   return (
     <figure className="mb-4">
       <blockquote className="rounded-2xl bg-Peach px-8 py-3 text-Accent-dark italic ">
-        <p className="text-left">{text}</p>
+        <p className="text-left">
+          <span className="not-italic font-bold">&#9786;</span> - {text}
+        </p>
         <figcaption className="text-right">
           &#8212; {name} ({city})
         </figcaption>
@@ -27,7 +30,8 @@ const Testimonial = ({
 const Testimonials = () => {
   return (
     <Container idName="testimonials">
-      <h2 className="text-xl mb-2 sm:mb-2 font-semibold">Testimonials</h2>
+      <SectionTitle title="Testimonials" imageLink="/feedback.svg" />
+
       <p className="mb-6 px-4 leading-relaxed first-line:tracking-widest indent-6 text-center">
         Ми вдячні нашим замовникам за відгуки. Зворотній звя'зок дуже важливий.
         Ось деякі з відгуків:

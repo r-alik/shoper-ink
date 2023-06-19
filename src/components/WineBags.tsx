@@ -1,16 +1,13 @@
 import Container from '../shared/Container';
 import GalleryItem from '../shared/GalleryItem';
-import bag from '/bag.svg';
+import SectionTitle from '../shared/SectionTitle';
 
 import pictures from '../data/wine.json';
 
 const WineBags = () => {
   return (
     <Container idName="winebags">
-      <div className="text-xl font-semibold mb-2 w-full flex justify-center items-center gap-2">
-        <img src={bag} alt="" width={20} />
-        <h2>Wine Bags</h2>
-      </div>
+      <SectionTitle title="Wine Bags" imageLink="/wine-basket.svg" />
       <p className="mb-10 px-4 leading-relaxed first-line:tracking-widest indent-6 text-xl text-center">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni tempora
         qui, animi, dicta optio eligendi laudantium omnis, quo dolor

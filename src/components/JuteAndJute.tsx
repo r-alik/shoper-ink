@@ -1,16 +1,14 @@
 import Container from '../shared/Container';
 import GalleryItem from '../shared/GalleryItem';
-import knit from '/knit.svg';
 
 import pictures from '../data/jute.json';
+import SectionTitle from '../shared/SectionTitle';
 
 const JuteAndJute = () => {
   return (
     <Container idName="juteAndJute">
-      <div className="text-xl font-semibold mb-2 w-full flex justify-center items-center gap-2">
-        <img src={knit} alt="" width={40} />
-        <h2>Jute & Jute</h2>
-      </div>
+      <SectionTitle title="Jute & Jute" imageLink="/knit.svg" />
+
       <p className="mb-10 px-4 leading-relaxed first-line:tracking-widest indent-6 text-xl text-center">
         <span className="italic text-Accent-dark tracking-widest font-bold">
           Jute&Jute
@@ -23,8 +21,7 @@ const JuteAndJute = () => {
 
       <ul
         className="w-full flex-grow p-2 grid gap-[var(--gap)] grid-flow-col auto-cols-[80%] sm:auto-cols-[48%] md:auto-cols-[32%] overflow-x-scroll scroll-p-4 snap-mandatory snap-x
-       rounded-md backdrop-blur-md backdrop-saturate-150 bg-Peach
-       "
+       rounded-lg bg-gray-600 shadow-[10px_10px_20px_#9e9e9e,_-10px_-10px_20px_#ffffff]"
       >
         {pictures.map(pic => {
           return (

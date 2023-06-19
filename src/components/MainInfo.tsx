@@ -20,11 +20,11 @@ const styles: StylesType = {
 
 const MainInfo = () => {
   return (
-    <Container idName="mainInfo">
+    <Container idName="#">
       <Picture picDetails={mainPic} styles={styles} />
 
       <div className="p-4 flex-1 basis-1/2 text-xl md:text-2xl text-center text-Gray-dark">
-        <h2 className="text-2xl mb-4 font-semibold md:text-3xl">
+        <h2 className="text-2xl mb-12 font-semibold md:text-3xl">
           Lorem ipsum dolor sit.
         </h2>
         <p className="mb-4 px-4 leading-relaxed first-line:tracking-widest">
