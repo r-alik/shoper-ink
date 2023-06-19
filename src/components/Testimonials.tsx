@@ -30,7 +30,7 @@ const Testimonial = ({
 const Testimonials = () => {
   return (
     <Container idName="testimonials">
-      <SectionTitle title="Testimonials" imageLink="/feedback.svg" />
+      <SectionTitle title="Відгуки" imageLink="/feedback.svg" />
 
       <p className="mb-6 px-4 leading-relaxed first-line:tracking-widest indent-6 text-center">
         Ми вдячні нашим замовникам за відгуки. Зворотній звя'зок дуже важливий.

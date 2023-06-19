@@ -1,10 +1,14 @@
 import Container from '../shared/Container';
-import GalleryItem from '../shared/GalleryItem';
+import SectionTitle from '../shared/SectionTitle';
+import GalleryList from '../shared/GalleryList';
 
 import pictures from '../data/jute.json';
-import SectionTitle from '../shared/SectionTitle';
 
-const JuteAndJute = () => {
+const JuteAndJute = ({
+  onModalOpen,
+}: {
+  onModalOpen: (link: string) => void;
+}) => {
   return (
     <Container idName="juteAndJute">
       <SectionTitle title="Jute & Jute" imageLink="/knit.svg" />
@@ -19,18 +23,7 @@ const JuteAndJute = () => {
         dolore hic voluptate porro dolorem modi? Quisquam, magnam ea.
       </p>
 
-      <ul
-        className="w-full flex-grow p-2 grid gap-[var(--gap)] grid-flow-col auto-cols-[80%] sm:auto-cols-[48%] md:auto-cols-[32%] overflow-x-scroll scroll-p-4 snap-mandatory snap-x
-       rounded-lg bg-gray-600 shadow-[10px_10px_20px_#9e9e9e,_-10px_-10px_20px_#ffffff]"
-      >
-        {pictures.map(pic => {
-          return (
-            <li key={pic.p360}>
-              <GalleryItem picDetail={pic} />
-            </li>
-          );
-        })}
-      </ul>
+      <GalleryList pictures={pictures} onModalOpen={onModalOpen} />
     </Container>
   );
 };

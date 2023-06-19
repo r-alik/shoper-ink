@@ -1,18 +1,9 @@
+import { PictureType } from '../shared/types/itemShape';
+
 export type StylesType = {
   picture: string | undefined;
   img: string | undefined;
 };
-
-export interface PictureType {
-  p360: string;
-  p800: string;
-  p1200: string;
-  jpg360: string;
-  jpg800: string;
-  jpg1200: string;
-  alt?: string;
-  isAvailable: boolean;
-}
 
 export interface PictureTypeWithStyles extends PictureType {
   styles: StylesType;
@@ -21,11 +12,13 @@ export interface PictureTypeWithStyles extends PictureType {
 const Picture = ({
   picDetails,
   styles,
+  onModalOpen,
 }: {
   picDetails: PictureType;
   styles: StylesType;
+  onModalOpen: (link: string) => void;
 }): JSX.Element => {
-  const { p360, p800, p1200, jpg360, jpg800, jpg1200, alt } = picDetails;
+  const { p360, p800, p1200, jpg360, jpg800, jpg1200, alt, title } = picDetails;
 
   return (
     <picture className={styles.picture}>
@@ -40,6 +33,7 @@ const Picture = ({
         sizes="(max-width: 360px) 360px, (max-width: 780px) 780px, 1040px"
       />
       <img
+        onClick={() => onModalOpen(jpg1200)}
         className={`${styles.img}  bg-gradient-to-r from-Gray-lightest to-Peach`}
         src={p1200}
         alt={alt}

@@ -4,7 +4,7 @@ import SectionTitle from '../shared/SectionTitle';
 const AboutMe = () => {
   return (
     <Container idName="aboutMe">
-      <SectionTitle title="Про мене" imageLink="/shopper-hand.svg" />
+      <SectionTitle title="Про мене" imageLink="/avatar.svg" />
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni tempora
