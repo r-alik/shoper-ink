@@ -18,7 +18,7 @@ const Picture = ({
   styles: StylesType;
   onModalOpen: (link: string) => void;
 }): JSX.Element => {
-  const { p360, p800, p1200, jpg360, jpg800, jpg1200, alt, title } = picDetails;
+  const { p360, p800, p1200, jpg360, jpg800, jpg1200, alt } = picDetails;
 
   return (
     <picture className={styles.picture}>

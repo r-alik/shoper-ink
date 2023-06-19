@@ -1,6 +1,7 @@
 import Container from '../shared/Container';
 import boxes from '/boxes.svg';
-import Picture, { PictureType, StylesType } from './Picture';
+import Picture, { StylesType } from './Picture';
+import { PictureType } from '../shared/types/itemShape';
 
 const mainPic: PictureType = {
   p1200: '/images/jute-9-1200.webp',
@@ -11,6 +12,10 @@ const mainPic: PictureType = {
   jpg360: '/images/jute-9-360.jpg',
   isAvailable: true,
   alt: 'Shoper-ink Jute busket and glass candle on a desk',
+  title: '',
+  id: 'hero',
+  description: '',
+  price: 0,
 };
 
 const styles: StylesType = {
@@ -21,7 +26,7 @@ const styles: StylesType = {
 const MainInfo = () => {
   return (
     <Container idName="#">
-      <Picture picDetails={mainPic} styles={styles} />
+      <Picture onModalOpen={() => {}} picDetails={mainPic} styles={styles} />
 
       <div className="p-4 flex-1 basis-1/2 text-xl md:text-2xl text-center text-Gray-dark">
         <h2 className="text-2xl mb-12 font-semibold md:text-3xl">
