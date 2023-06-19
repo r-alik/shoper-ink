@@ -1,6 +1,7 @@
 [
   {
     "id": "wine-1",
+    "title": "Wine 1",
     "p1200": "/images/wine-1-1200.webp",
     "p800": "/images/wine-1-800.webp",
     "p360": "/images/wine-1-360.webp",
@@ -8,10 +9,13 @@
     "jpg800": "/images/wine-1-800.jpg",
     "jpg360": "/images/wine-1-360.jpg",
     "isAvailable": false,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-2",
+    "title": "Wine 2",
     "p1200": "/images/wine-2-1200.webp",
     "p800": "/images/wine-2-800.webp",
     "p360": "/images/wine-2-360.webp",
@@ -19,10 +23,13 @@
     "jpg800": "/images/wine-2-800.jpg",
     "jpg360": "/images/wine-2-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-3",
+    "title": "Wine 3",
     "p1200": "/images/wine-3-1200.webp",
     "p800": "/images/wine-3-800.webp",
     "p360": "/images/wine-3-360.webp",
@@ -30,10 +37,13 @@
     "jpg800": "/images/wine-3-800.jpg",
     "jpg360": "/images/wine-3-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-4",
+    "title": "Wine 4",
     "p1200": "/images/wine-4-1200.webp",
     "p800": "/images/wine-4-800.webp",
     "p360": "/images/wine-4-360.webp",
@@ -41,10 +51,13 @@
     "jpg800": "/images/wine-4-800.jpg",
     "jpg360": "/images/wine-4-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-5",
+    "title": "Wine 5",
     "p1200": "/images/wine-5-1200.webp",
     "p800": "/images/wine-5-800.webp",
     "p360": "/images/wine-5-360.webp",
@@ -52,10 +65,13 @@
     "jpg800": "/images/wine-5-800.jpg",
     "jpg360": "/images/wine-5-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-6",
+    "title": "Wine 6",
     "p1200": "/images/wine-6-1200.webp",
     "p800": "/images/wine-6-800.webp",
     "p360": "/images/wine-6-360.webp",
@@ -63,10 +79,13 @@
     "jpg800": "/images/wine-6-800.jpg",
     "jpg360": "/images/wine-6-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-7",
+    "title": "Wine 7",
     "p1200": "/images/wine-7-1200.webp",
     "p800": "/images/wine-7-800.webp",
     "p360": "/images/wine-7-360.webp",
@@ -74,10 +93,13 @@
     "jpg800": "/images/wine-7-800.jpg",
     "jpg360": "/images/wine-7-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-8",
+    "title": "Wine 8",
     "p1200": "/images/wine-8-1200.webp",
     "p800": "/images/wine-8-800.webp",
     "p360": "/images/wine-8-360.webp",
@@ -85,10 +107,13 @@
     "jpg800": "/images/wine-8-800.jpg",
     "jpg360": "/images/wine-8-360.jpg",
     "isAvailable": false,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-9",
+    "title": "Wine 9",
     "p1200": "/images/wine-9-1200.webp",
     "p800": "/images/wine-9-800.webp",
     "p360": "/images/wine-9-360.webp",
@@ -96,10 +121,13 @@
     "jpg800": "/images/wine-9-800.jpg",
     "jpg360": "/images/wine-9-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-10",
+    "title": "Wine 10",
     "p1200": "/images/wine-10-1200.webp",
     "p800": "/images/wine-10-800.webp",
     "p360": "/images/wine-10-360.webp",
@@ -107,10 +135,13 @@
     "jpg800": "/images/wine-10-800.jpg",
     "jpg360": "/images/wine-10-360.jpg",
     "isAvailable": false,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-11",
+    "title": "Wine 11",
     "p1200": "/images/wine-11-1200.webp",
     "p800": "/images/wine-11-800.webp",
     "p360": "/images/wine-11-360.webp",
@@ -118,10 +149,13 @@
     "jpg800": "/images/wine-11-800.jpg",
     "jpg360": "/images/wine-11-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-12",
+    "title": "Wine 12",
     "p1200": "/images/wine-12-1200.webp",
     "p800": "/images/wine-12-800.webp",
     "p360": "/images/wine-12-360.webp",
@@ -129,10 +163,13 @@
     "jpg800": "/images/wine-12-800.jpg",
     "jpg360": "/images/wine-12-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-13",
+    "title": "Wine 13",
     "p1200": "/images/wine-13-1200.webp",
     "p800": "/images/wine-13-800.webp",
     "p360": "/images/wine-13-360.webp",
@@ -140,10 +177,13 @@
     "jpg800": "/images/wine-13-800.jpg",
     "jpg360": "/images/wine-13-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-14",
+    "title": "Wine 14",
     "p1200": "/images/wine-14-1200.webp",
     "p800": "/images/wine-14-800.webp",
     "p360": "/images/wine-14-360.webp",
@@ -151,10 +191,13 @@
     "jpg800": "/images/wine-14-800.jpg",
     "jpg360": "/images/wine-14-360.jpg",
     "isAvailable": true,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   },
   {
     "id": "wine-15",
+    "title": "Wine 15",
     "p1200": "/images/wine-15-1200.webp",
     "p800": "/images/wine-15-800.webp",
     "p360": "/images/wine-15-360.webp",
@@ -162,6 +205,8 @@
     "jpg800": "/images/wine-15-800.jpg",
     "jpg360": "/images/wine-15-360.jpg",
     "isAvailable": false,
-    "alt": ""
+    "alt": "",
+    "price": 79,
+    "description": ""
   }
 ]
