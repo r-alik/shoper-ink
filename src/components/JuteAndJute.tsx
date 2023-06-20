@@ -18,9 +18,10 @@ const JuteAndJute = ({
           Jute&Jute
         </span>{' '}
         - це продукція вироблена з натурального органічного матеріалу. Кожна річ
-        індівідуальна та унікальна тому що зроблена руками майстрині. Lorem
-        ipsum dolor sit, amet consectetur adipisicing elit. Esse ipsa quidem,
-        dolore hic voluptate porro dolorem modi? Quisquam, magnam ea.
+        індівідуальна та унікальна тому що зроблена руками майстрині. Від
+        обробки джуту до створення витончених виробів - кожна деталь має
+        особливе значення. Серія Джут&Джут - це поєднання природи та
+        майстерності, що втілюється у кожній речі.
       </p>
 
       <GalleryList pictures={pictures} onModalOpen={onModalOpen} />

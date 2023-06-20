@@ -34,9 +34,10 @@ const Testimonials = () => {
 
       <p className="mb-6 px-4 leading-relaxed first-line:tracking-widest indent-6 text-center">
         Ми вдячні нашим замовникам за відгуки. Зворотній звя'зок дуже важливий.
+      </p>
+      <p className="mb-6 px-4 leading-relaxed first-line:tracking-widest indent-6 text-center">
         Ось деякі з відгуків:
       </p>
-
       {testimonials.map(t => {
         return (
           <Testimonial city={t.city} text={t.text} name={t.name} key={t.id} />

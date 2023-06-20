@@ -6,10 +6,13 @@ const Masterclass = () => {
     <Container idName="masterclass">
       <SectionTitle title="Майстер клас" imageLink="/sew.svg" />
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni tempora
-        qui, animi, dicta optio eligendi laudantium omnis, quo dolor
-        reprehenderit soluta earum in est facilis.
+      <p className="mb-10 px-4 leading-relaxed first-line:tracking-widest indent-6 text-xl text-center">
+        Садок вишневий коло хати, Хрущі над вишнями гудуть, Плугатарі з плугами
+        йдуть, Співають ідучи дівчата, А матері вечерять ждуть. Сем'я вечеря
+        коло хати, Вечірня зіронька встає. Дочка вечерять подає, А мати хоче
+        научати, Так соловейко не дає. Поклала мати коло хати Маленьких діточок
+        своїх; Сама заснула коло їх. Затихло все, тілько дівчата Та соловейко не
+        затих.
       </p>
     </Container>
   );

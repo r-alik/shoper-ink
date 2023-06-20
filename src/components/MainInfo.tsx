@@ -30,13 +30,14 @@ const MainInfo = () => {
 
       <div className="p-4 flex-1 basis-1/2 text-xl md:text-2xl text-center text-Gray-dark">
         <h2 className="text-2xl mb-12 font-semibold md:text-3xl">
-          Lorem ipsum dolor sit.
+          Садок вишневий коло хати.
         </h2>
         <p className="mb-4 px-4 leading-relaxed first-line:tracking-widest">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          molestias maxime ab nisi aliquid amet commodi accusantium doloremque
-          expedita dolores quisquam non nam architecto illo quaerat, tempora
-          Lorem ipsum dolor sit amet consectetur maxime ab nisi aliquid amet.
+          Садок вишневий коло хати, Хрущі над вишнями гудуть, Плугатарі з
+          плугами йдуть, Співають ідучи дівчата, А матері вечерять ждуть. Сем'я
+          вечеря коло хати, Вечірня зіронька встає. Дочка вечерять подає, А мати
+          хоче научати, Так соловейко не дає. Поклала мати коло хати Маленьких
+          діточок своїх;
         </p>
         <img src={boxes} alt="" width={144} className="mx-auto opacity-70" />
       </div>

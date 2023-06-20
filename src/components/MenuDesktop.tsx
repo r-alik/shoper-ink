@@ -17,18 +17,17 @@ const menu: menuItem[] = [
 
 const MenuDesktop = () => {
   const [menuItems, setMenuItems] = useState<menuItem[]>(menu);
-  const [activeSection, setActiveSection] = useState<string>('#');
+
+  const getHashValue = () => location.hash || '#';
 
   const hashChangeHandler = () => {
-    const hashValue = location.hash || '#';
-
-    setActiveSection(hashValue);
+    updateMenu();
   };
 
   function updateMenu() {
-    setMenuItems(prev => {
+    return setMenuItems(prev => {
       return prev.map(item => {
-        return item.href === activeSection
+        return item.href === getHashValue()
           ? { ...item, isActive: true }
           : { ...item, isActive: false };
       });
@@ -44,10 +43,6 @@ const MenuDesktop = () => {
       window.removeEventListener('hashchange', hashChangeHandler);
     };
   }, []);
-
-  useEffect(() => {
-    updateMenu();
-  }, [activeSection]);
 
   return (
     <nav>
@@ -80,12 +75,6 @@ function MenuItem({ menuDetails }: { menuDetails: menuItem }) {
 export default MenuDesktop;
 
 /*
-
-
-  // const setHash = (value: string) => {
-  //   if (location.hash !== value) location.hash = value;
-  //   return (location.hash = activeSection);
-  // };
 
   const sections = document.querySelectorAll('section');
 

@@ -28,10 +28,7 @@ function GalleryItem({
         <span className="text-xs">id: {picDetail.id}</span>
       </div>
 
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, dicta
-        dolorum? Aspernatur minus sunt esse?
-      </p>
+      <p>{picDetail.description}</p>
       <p className="mb-3">
         Ціна:{' '}
         <span className="text-Accent-dark font-semibold">
