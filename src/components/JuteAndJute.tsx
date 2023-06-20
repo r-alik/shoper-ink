@@ -7,7 +7,7 @@ import pictures from '../data/jute.json';
 const JuteAndJute = ({
   onModalOpen,
 }: {
-  onModalOpen: (link: string) => void;
+  onModalOpen: (link: string, title: string) => void;
 }) => {
   return (
     <Container idName="juteAndJute">

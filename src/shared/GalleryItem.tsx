@@ -12,10 +12,13 @@ function GalleryItem({
   onModalOpen,
 }: {
   picDetail: PictureType;
-  onModalOpen: (link: string) => void;
+  onModalOpen: (link: string, title: string) => void;
 }) {
   return (
-    <div className="h-full flex flex-col justify-start items-stretch gap-4 border rounded-lg p-2 snap-start bg-gradient-to-br from-Peach to-white shadow-[10px_10px_20px_#8c8985,_-10px_-10px_20px_#ffffff] ">
+    <div
+      className="h-full flex flex-col justify-start items-stretch gap-4 border rounded-lg p-2 snap-start 
+    bg-gradient-to-br from-Peach to-white shadow-[10px_10px_20px_#8c8985,_-10px_-10px_20px_#ffffff] "
+    >
       <Picture onModalOpen={onModalOpen} picDetails={picDetail} styles={s} />
       <div className="flex justify-between gap-1 items-center p-2">
         <span

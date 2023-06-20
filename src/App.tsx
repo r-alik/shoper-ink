@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -7,22 +9,25 @@ import Masterclass from './components/Masterclass';
 import Testimonials from './components/Testimonials';
 import WineBags from './components/WineBags';
 import Modal from './components/Modal';
-import { useState } from 'react';
+
+const initialState = { link: '', title: '' };
 
 function App() {
-  const [bigImage, setBigImage] = useState<string>('');
+  const [bigImage, setBigImage] = useState<{ link: string; title: string }>(
+    initialState,
+  );
 
   const modalPortal: HTMLDialogElement = document.getElementById(
     'modal',
   ) as HTMLDialogElement;
 
-  function onModalOpen(link: string) {
-    setBigImage(link);
+  function onModalOpen(link: string, title: string) {
+    setBigImage({ link, title });
     modalPortal?.showModal();
   }
 
   const onModalClose = () => {
-    setBigImage('');
+    setBigImage(initialState);
     modalPortal.close();
   };
 
@@ -35,7 +40,11 @@ function App() {
       <Testimonials />
       <Masterclass />
       <AboutMe />
-      <Modal src={bigImage} onModalClose={onModalClose} />
+      <Modal
+        src={bigImage.link}
+        title={bigImage.title}
+        onModalClose={onModalClose}
+      />
       <Footer />
     </>
   );

@@ -4,7 +4,11 @@ import GalleryList from '../shared/GalleryList';
 
 import pictures from '../data/wine.json';
 
-const WineBags = ({ onModalOpen }: { onModalOpen: (link: string) => void }) => {
+const WineBags = ({
+  onModalOpen,
+}: {
+  onModalOpen: (link: string, title: string) => void;
+}) => {
   return (
     <Container idName="winebags">
       <SectionTitle title="Wine Bags" imageLink="/wine-basket.svg" />

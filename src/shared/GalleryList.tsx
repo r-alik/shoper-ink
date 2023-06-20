@@ -6,7 +6,7 @@ const GalleryList = ({
   onModalOpen,
 }: {
   pictures: PictureType[];
-  onModalOpen: (link: string) => void;
+  onModalOpen: (link: string, title: string) => void;
 }) => {
   return (
     <ul
