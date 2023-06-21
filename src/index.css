@@ -15,6 +15,10 @@
   body {
     overflow-x: hidden;
   }
+
+  section:not(:first-of-type) {
+    padding-block: 1.5rem;
+  }
 }
 
 @layer utilities {
@@ -23,5 +27,17 @@
   }
   .padding-values {
     padding: min(20vh, 10rem) 20vw;
+  }
+
+  .section-p {
+    margin-bottom: 2.5rem;
+    padding-inline: 1rem;
+    line-height: 1.625;
+    text-indent: 1.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .section-p::first-line {
+    letter-spacing: 0.1rem;
   }
 }

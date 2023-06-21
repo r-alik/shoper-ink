@@ -6,7 +6,7 @@ const Masterclass = () => {
     <Container idName="masterclass">
       <SectionTitle title="Майстер клас" imageLink="/sew.svg" />
 
-      <p className="mb-10 px-4 leading-relaxed first-line:tracking-widest indent-6 text-xl text-center">
+      <p className="section-p md:text-[1.5rem] text-Gray-dark">
         Садок вишневий коло хати, Хрущі над вишнями гудуть, Плугатарі з плугами
         йдуть, Співають ідучи дівчата, А матері вечерять ждуть. Сем'я вечеря
         коло хати, Вечірня зіронька встає. Дочка вечерять подає, А мати хоче

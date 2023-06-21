@@ -6,7 +6,7 @@ const AboutMe = () => {
     <Container idName="aboutMe">
       <SectionTitle title="Про мене" imageLink="/avatar.svg" />
 
-      <p className="mb-10 px-4 leading-relaxed first-line:tracking-widest indent-6 text-xl text-center">
+      <p className="section-p md:text-[1.5rem] text-Gray-dark">
         Привіт! Мене звати Світлана. Я - творча душа зі створення унікальних
         виробів. З любов'ю та майстерністю я виготовляю неперевершені винні
         сумки та джутові вироби. Кожен виріб - це втілення мого власного стилю

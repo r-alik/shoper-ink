@@ -19,14 +19,14 @@ const mainPic: PictureType = {
 };
 
 const styles: StylesType = {
-  picture: 'max-h-[40vh] opacity-90 rounded-t-lg overflow-hidden mb-2',
+  picture: 'max-h-[45vh] opacity-90 rounded-t-lg overflow-hidden mb-2',
   img: 'h-full sm:object-cover sm:object-center',
 };
 
 const MainInfo = () => {
   return (
     <Container idName="#">
-      <Picture onModalOpen={() => {}} picDetails={mainPic} styles={styles} />
+      {/* <Picture onModalOpen={() => {}} picDetails={mainPic} styles={styles} /> */}
 
       <div className="p-4 flex-1 basis-1/2 text-xl md:text-2xl text-center text-Gray-dark">
         <h2 className="text-2xl mb-12 font-semibold md:text-3xl">

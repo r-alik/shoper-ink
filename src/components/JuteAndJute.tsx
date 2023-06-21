@@ -13,8 +13,8 @@ const JuteAndJute = ({
     <Container idName="juteAndJute">
       <SectionTitle title="Jute & Jute" imageLink="/knit.svg" />
 
-      <p className="mb-10 px-4 leading-relaxed first-line:tracking-widest indent-6 text-xl text-center">
-        <span className="italic text-Accent-dark tracking-widest font-bold">
+      <p className="section-p md:text-[1.5rem] text-Gray-dark">
+        <span className="italic text-Accent-dark tracking-widest text-">
           Jute&Jute
         </span>{' '}
         - це продукція вироблена з натурального органічного матеріалу. Кожна річ
@@ -30,3 +30,9 @@ const JuteAndJute = ({
 };
 
 export default JuteAndJute;
+
+/*
+mb-4 px-4 leading-relaxed first-line:tracking-widest
+
+text-xl md:text-2xl text-center text-Gray-dark
+*/

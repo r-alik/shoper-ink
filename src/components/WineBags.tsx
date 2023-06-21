@@ -12,7 +12,7 @@ const WineBags = ({
   return (
     <Container idName="winebags">
       <SectionTitle title="Wine Bags" imageLink="/wine-basket.svg" />
-      <p className="mb-10 px-4 leading-relaxed first-line:tracking-widest indent-6 text-xl text-center">
+      <p className="section-p md:text-[1.5rem] text-Gray-dark">
         Особливий шарм в кожній пляшці вина заслуговує на найкраще обгортання.
         Наші вишукані винні сумки - це втілення елегантності та ручної роботи.
         Виготовлені з практичного матеріалу, вони створені, щоб надати вашому
