@@ -1,5 +1,5 @@
 import Container from '../shared/Container';
-import shoperGirl from '/shopper-girl.svg';
+import shoperGirl from '/icons/shopper-girl.svg';
 
 import testimonials from '../data/testimonials.json';
 import SectionTitle from '../shared/SectionTitle';
@@ -30,7 +30,7 @@ const Testimonial = ({
 const Testimonials = () => {
   return (
     <Container idName="testimonials">
-      <SectionTitle title="Відгуки" imageLink="/feedback.svg" />
+      <SectionTitle title="Відгуки" imageLink="/icons/feedback.svg" />
 
       <p className="section-p md:text-[1.5rem] text-Gray-dark md:mb-1">
         Ми вдячні нашим замовникам за відгуки. Зворотній звя'зок дуже важливий.

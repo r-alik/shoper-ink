@@ -30,7 +30,7 @@ const mainPic: PictureType = {
 
 const styles: StylesType = {
   picture: 'block max-h-[45vh] opacity-90 overflow-hidden mb-2 mt-1 mx-auto',
-  img: 'mx-auto sm:object-contain sm:object-center rounded-t-lg',
+  img: 'mx-auto sm:object-contain sm:object-center',
 };
 
 const initialState = { link: '', title: '' };
@@ -44,7 +44,6 @@ function App() {
 
   function onModalOpen(link: string, title: string) {
     setBigImage({ link, title });
-    modalPortal?.showModal();
   }
 
   const onModalClose = () => {
@@ -53,8 +52,10 @@ function App() {
   };
 
   useEffect(() => {
-    console.log('State changed');
-  }, [bigImage]);
+    if (!bigImage.link) return;
+
+    modalPortal?.showModal();
+  }, [bigImage.link]);
 
   return (
     <>

@@ -22,7 +22,7 @@ module.exports = {
         pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       backgroundImage: {
-        'walking-bag': "url('/bag.svg')",
+        'walking-bag': "url('/icons/bag.svg')",
       },
       screens: {
         widescreen: {

@@ -11,7 +11,7 @@ const JuteAndJute = ({
 }) => {
   return (
     <Container idName="juteAndJute">
-      <SectionTitle title="Jute & Jute" imageLink="/knit.svg" />
+      <SectionTitle title="Jute & Jute" imageLink="/icons/knit.svg" />
 
       <p className="section-p md:text-[1.5rem] text-Gray-dark">
         <span className="italic text-Accent-dark tracking-widest text-">

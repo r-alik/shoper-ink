@@ -4,7 +4,7 @@ import SectionTitle from '../shared/SectionTitle';
 const Masterclass = () => {
   return (
     <Container idName="masterclass">
-      <SectionTitle title="Майстер клас" imageLink="/sew.svg" />
+      <SectionTitle title="Майстер клас" imageLink="/icons/sew.svg" />
 
       <p className="section-p md:text-[1.5rem] text-Gray-dark">
         Садок вишневий коло хати, Хрущі над вишнями гудуть, Плугатарі з плугами

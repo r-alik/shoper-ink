@@ -4,7 +4,7 @@ import SectionTitle from '../shared/SectionTitle';
 const AboutMe = () => {
   return (
     <Container idName="aboutMe">
-      <SectionTitle title="Про мене" imageLink="/avatar.svg" />
+      <SectionTitle title="Про мене" imageLink="/icons/avatar.svg" />
 
       <p className="section-p md:text-[1.5rem] text-Gray-dark">
         Привіт! Мене звати Світлана. Я - творча душа зі створення унікальних

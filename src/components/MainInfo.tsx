@@ -1,27 +1,5 @@
 import Container from '../shared/Container';
-import boxes from '/boxes.svg';
-import Picture, { StylesType } from './Picture';
-import { PictureType } from '../shared/types/itemShape';
-
-const mainPic: PictureType = {
-  p1200: '/images/jute-9-1200.webp',
-  p800: '/images/jute-9-800.webp',
-  p360: '/images/jute-9-360.webp',
-  jpg1200: '/images/jute-9-1200.jpg',
-  jpg800: '/images/jute-9-800.jpg',
-  jpg360: '/images/jute-9-360.jpg',
-  isAvailable: true,
-  alt: 'Shoper-ink Jute busket and glass candle on a desk',
-  title: '',
-  id: 'hero',
-  description: '',
-  price: 0,
-};
-
-const styles: StylesType = {
-  picture: 'max-h-[45vh] opacity-90 rounded-t-lg overflow-hidden mb-2',
-  img: 'h-full sm:object-cover sm:object-center',
-};
+import boxes from '/icons/boxes.svg';
 
 const MainInfo = () => {
   return (
