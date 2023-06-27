@@ -48,7 +48,7 @@ const MenuDesktop = () => {
     <nav>
       <ul
         id="desktop-navigation"
-        className="flex font-normal gap-2 text-sm text-Txt-darkest"
+        className="flex font-normal gap-2 text-sm lg:text-base text-Txt-darkest"
       >
         {menuItems.map(m => (
           <MenuItem key={m.href} menuDetails={m} />

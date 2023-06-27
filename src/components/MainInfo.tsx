@@ -1,4 +1,5 @@
 import Container from '../shared/Container';
+import HorizontalDivider from '../shared/HorizontalDIvider';
 import boxes from '/icons/boxes.svg';
 
 const MainInfo = () => {
@@ -6,8 +7,8 @@ const MainInfo = () => {
     <Container idName="#">
       {/* <Picture onModalOpen={() => {}} picDetails={mainPic} styles={styles} /> */}
 
-      <div className="p-4 flex-1 basis-1/2 text-xl md:text-2xl text-center text-Gray-dark">
-        <h2 className="text-2xl mb-12 font-semibold md:text-3xl">
+      <div className="px-4 py-8 flex-1 basis-1/2 text-xl md:text-2xl text-center text-Gray-dark">
+        <h2 className="text-2xl mb-12 font-semibold md:text-3xl lg:text-4xl">
           Садок вишневий коло хати.
         </h2>
         <p className="mb-4 px-4 leading-relaxed first-line:tracking-widest">
@@ -19,6 +20,8 @@ const MainInfo = () => {
         </p>
         <img src={boxes} alt="" width={144} className="mx-auto opacity-70" />
       </div>
+
+      <HorizontalDivider />
     </Container>
   );
 };

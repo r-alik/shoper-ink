@@ -7,7 +7,7 @@ const Header = () => {
   const onlyWidth = useWindowWidth();
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b h-16 flex gap-3 justify-between items-center w-11/12 max-w-5xl mx-auto p-2 text-lg text-Txt-dark sm:text-base">
+    <header className="sticky top-0 z-50 bg-white border-b rounded-b-lg h-16 lg:h-20 flex gap-3 justify-between items-center w-11/12 max-w-5xl mx-auto p-2 text-lg text-Txt-dark sm:text-base">
       <div
         className="flex gap-1 cursor-pointer"
         onClick={() => location.replace('/#')}

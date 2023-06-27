@@ -10,7 +10,7 @@ const Container = ({
   return (
     <section
       id={idName}
-      className="flex flex-col justify-start items-center mx-auto  min-h-[70vh] w-11/12 px-1 max-w-5xl border-Accent-light/30 border-b-2 scroll-mt-16 
+      className="flex flex-col justify-start items-center mx-auto  min-h-[50vh] w-11/12 px-1 max-w-5xl scroll-mt-16
       "
     >
       {children}
@@ -19,3 +19,7 @@ const Container = ({
 };
 
 export default Container;
+
+/*
+border-Accent-light/30 border-b-2 
+*/

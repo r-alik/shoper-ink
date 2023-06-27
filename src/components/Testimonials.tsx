@@ -3,6 +3,7 @@ import shoperGirl from '/icons/shopper-girl.svg';
 
 import testimonials from '../data/testimonials.json';
 import SectionTitle from '../shared/SectionTitle';
+import HorizontalDivider from '../shared/HorizontalDIvider';
 
 const Testimonial = ({
   text,
@@ -15,9 +16,10 @@ const Testimonial = ({
 }) => {
   return (
     <figure className="mb-4">
-      <blockquote className="rounded-2xl bg-Peach px-8 py-3 text-Accent-dark italic ">
+      <blockquote className="rounded-2xl bg-Peach px-8 py-3 text-Gray-dark italic">
         <p className="text-left">
-          <span className="not-italic font-bold">&#9786;</span> - {text}
+          <span className="not-italic font-bold text-Accent-dark">&#9786;</span>{' '}
+          - {text}
         </p>
         <figcaption className="text-right">
           &#8212; {name} ({city})
@@ -45,6 +47,8 @@ const Testimonials = () => {
       })}
 
       <img src={shoperGirl} alt="" width={80} />
+
+      <HorizontalDivider />
     </Container>
   );
 };

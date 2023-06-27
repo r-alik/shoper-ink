@@ -3,6 +3,7 @@ import SectionTitle from '../shared/SectionTitle';
 import GalleryList from '../shared/GalleryList';
 
 import pictures from '../data/wine.json';
+import HorizontalDivider from '../shared/HorizontalDIvider';
 
 const WineBags = ({
   onModalOpen,
@@ -10,7 +11,9 @@ const WineBags = ({
   onModalOpen: (link: string, title: string) => void;
 }) => {
   return (
-    <Container idName="winebags">
+
+<>
+<Container idName="winebags">
       <SectionTitle title="Wine Bags" imageLink="/icons/wine-basket.svg" />
       <p className="section-p md:text-[1.5rem] text-Gray-dark">
         Особливий шарм в кожній пляшці вина заслуговує на найкраще обгортання.
@@ -23,8 +26,11 @@ const WineBags = ({
         бавовняними сумками.
       </p>
 
-      <GalleryList onModalOpen={onModalOpen} pictures={pictures} />
     </Container>
+      <GalleryList onModalOpen={onModalOpen} pictures={pictures} />
+  
+      <HorizontalDivider/>
+    </>
   );
 };
 
