@@ -10,7 +10,7 @@ const GalleryList = ({
 }) => {
   return (
     <ul
-      className="max-w-6xl mx-auto flex-grow p-2 grid gap-[var(--gap)] grid-flow-col auto-cols-[80%] sm:auto-cols-[48%] md:auto-cols-[32%] overflow-x-scroll scroll-p-4 snap-mandatory snap-x
+      className="max-w-6xl mx-auto flex-grow p-2 grid gap-[var(--gap)] grid-flow-col auto-cols-[70%] sm:auto-cols-[38%] md:auto-cols-[26%] overflow-x-scroll scroll-p-4 snap-mandatory snap-x
        rounded-lg bg-gray-600 shadow-[10px_10px_20px_#9e9e9e,_-10px_-10px_20px_#ffffff]"
     >
       {pictures.map(pic => {
