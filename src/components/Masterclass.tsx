@@ -1,5 +1,5 @@
 import Container from '../shared/Container';
-import HorizontalDivider from '../shared/HorizontalDIvider';
+import HorizontalDivider from '../shared/HorizontalDivider';
 import SectionTitle from '../shared/SectionTitle';
 
 const Masterclass = () => {

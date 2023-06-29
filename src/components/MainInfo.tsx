@@ -1,5 +1,5 @@
 import Container from '../shared/Container';
-import HorizontalDivider from '../shared/HorizontalDIvider';
+import HorizontalDivider from '../shared/HorizontalDivider';
 import boxes from '/icons/boxes.svg';
 
 const MainInfo = () => {

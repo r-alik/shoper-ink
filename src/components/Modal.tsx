@@ -5,8 +5,6 @@ export interface ModalShape {
 }
 
 const Modal = (props: ModalShape) => {
-  console.log(props.src);
-
   return (
     <dialog
       id="modal"

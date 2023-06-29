@@ -3,7 +3,7 @@ import shoperGirl from '/icons/shopper-girl.svg';
 
 import testimonials from '../data/testimonials.json';
 import SectionTitle from '../shared/SectionTitle';
-import HorizontalDivider from '../shared/HorizontalDIvider';
+import HorizontalDivider from '../shared/HorizontalDivider';
 
 const Testimonial = ({
   text,

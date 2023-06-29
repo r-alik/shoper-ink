@@ -37,8 +37,8 @@
   }
 
   .section-p {
-    margin-bottom: 2.5rem;
-    padding-inline: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.25rem 1rem;
     line-height: 1.625;
     text-indent: 1.5rem;
     font-size: 1.25rem;
