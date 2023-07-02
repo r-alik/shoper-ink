@@ -61,7 +61,7 @@ function App() {
     <>
       <Header />
 
-      <Picture onModalOpen={() => {}} picDetails={mainPic} styles={styles} />
+      {/* <Picture picDetails={mainPic} styles={styles} /> */}
 
       <MainInfo />
       <JuteAndJute onModalOpen={onModalOpen} />
