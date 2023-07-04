@@ -5,7 +5,7 @@ import HorizontalDivider from '../shared/HorizontalDivider';
 import pictures from '../data/jute.json';
 
 import juteField from '/images/decor-jute-field-1.jpg';
-import texture from '/images/decor-texture-1.jpg';
+import texture from '/images/decor-texture-1-square.jpg';
 import placemat from '/images/decor-placemat-1.jpg';
 import ListElement from '../shared/ListElement';
 
@@ -29,15 +29,24 @@ const JuteAndJute = ({
           </figcaption>
         </figure>
 
-        <div className="standard-text text-Gray-dark">
-          <h3 className="text-xl md:text-2xl font-semibold lg:text-3xl mb-4">
+        <div className="my-8 standard-text md:text-[1.5rem] text-Gray-dark bg-Peach py-2 rounded-lg">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
             Чому джут?
           </h3>
-          <ul>
-            <ListElement text="Природний матеріал" />
-            <ListElement text="Практичність" />
-            <ListElement text="Довговічність" />
-          </ul>
+          <div className="flex justify-around items-center gap-2">
+            <img
+              src={texture}
+              className="w-1/3 rounded-md shrink-0"
+              alt="Текстура полотна вироблена із органічної джутової нитки"
+              title="Текстура полотна вироблена із органічної джутової нитки"
+            />
+
+            <ul>
+              <ListElement text="Природний матеріал" />
+              <ListElement text="Практичність" />
+              <ListElement text="Довговічність" />
+            </ul>
+          </div>
         </div>
 
         <HorizontalDivider />
@@ -48,19 +57,6 @@ const JuteAndJute = ({
           </span>{' '}
           - це продукція вироблена з натурального органічного матеріалу.
         </p>
-        <p className="section-p md:text-[1.5rem] text-Gray-dark">
-          <img
-            src={texture}
-            className="w-1/2 sm:w-2/5 rounded-md float-left mr-2"
-            alt="Текстура полотна вироблена із органічної джутової нитки"
-            title="Текстура полотна вироблена із органічної джутової нитки"
-          />
-          Серія{' '}
-          <span className="italic text-Accent-dark tracking-widest text-">
-            Jute&Jute
-          </span>{' '}
-          - це поєднання природи та майстерності, що втілюється у кожній речі.
-        </p>
         <div className="mb-8">
           <img
             src={placemat}
@@ -69,6 +65,11 @@ const JuteAndJute = ({
             title="Стильна джутова підставка на стіл"
           />
           <p className="section-p md:text-[1.5rem] text-Gray-dark">
+            Серія{' '}
+            <span className="italic text-Accent-dark tracking-widest text-">
+              Jute&Jute
+            </span>{' '}
+            - це поєднання природи та майстерності, що втілюється у кожній речі.
             Кожна річ індівідуальна та унікальна тому що зроблена руками
             майстрині. Від обробки джуту до створення витончених виробів - кожна
             деталь має особливе значення.
@@ -80,7 +81,11 @@ const JuteAndJute = ({
         </div>
       </Container>
 
-      <GalleryList pictures={pictures} onModalOpen={onModalOpen} />
+      <GalleryList
+        pictures={pictures}
+        onModalOpen={onModalOpen}
+        bgImage="/images/decor-texture-1.jpg"
+      />
 
       <HorizontalDivider />
     </>

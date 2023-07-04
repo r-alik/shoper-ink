@@ -46,7 +46,11 @@ const WineBags = ({
           вину гідне обгортання з нашими ручними бавовняними сумками.
         </p>
       </Container>
-      <GalleryList onModalOpen={onModalOpen} pictures={pictures} />
+      <GalleryList
+        onModalOpen={onModalOpen}
+        pictures={pictures}
+        bgImage={bags}
+      />
 
       <HorizontalDivider />
     </>

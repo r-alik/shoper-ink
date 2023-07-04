@@ -6,7 +6,7 @@ interface ListElementProps {
   width?: number;
 }
 
-const ListElement = ({ text, image = heart, width = 20 }: ListElementProps) => {
+const ListElement = ({ text, image = heart, width = 16 }: ListElementProps) => {
   return (
     <li key={text} className="flex gap-2 mb-4">
       <img src={image} width={width} />
