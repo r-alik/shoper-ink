@@ -2,6 +2,8 @@ import Container from '../shared/Container';
 import HorizontalDivider from '../shared/HorizontalDivider';
 import SectionTitle from '../shared/SectionTitle';
 
+import masterVideo from '/video/production-480.mp4';
+
 const Masterclass = () => {
   return (
     <Container idName="masterclass">
@@ -11,6 +13,13 @@ const Masterclass = () => {
         Садок вишневий коло хати, Хрущі над вишнями гудуть, Плугатарі з плугами
         йдуть, Співають ідучи дівчата, А матері вечерять ждуть.
       </p>
+      <video
+        src={masterVideo}
+        muted
+        loop
+        autoPlay
+        className="rounded-lg"
+      ></video>
       <p className="section-p md:text-[1.5rem] text-Gray-dark">
         Сем'я вечеря коло хати, Вечірня зіронька встає. Дочка вечерять подає, А
         мати хоче научати, Так соловейко не дає. Поклала мати коло хати

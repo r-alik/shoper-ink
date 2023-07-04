@@ -4,10 +4,9 @@ import HorizontalDivider from '../shared/HorizontalDivider';
 
 import pictures from '../data/jute.json';
 
-import heart from '/public/icons/heart.svg';
 import juteField from '/images/decor-jute-field-1.jpg';
 import texture from '/images/decor-texture-1.jpg';
-import placemat from '/images/decor-placemat-3.jpg';
+import placemat from '/images/decor-placemat-1.jpg';
 import ListElement from '../shared/ListElement';
 
 const JuteAndJute = ({
@@ -25,7 +24,7 @@ const JuteAndJute = ({
             alt="Снопи зібранної джутової сировини на джутовому полі"
             title="Снопи зібранної джутової сировини на джутовому полі"
           />
-          <figcaption className="italic text-Txt-dark/60 ">
+          <figcaption className="italic text-Txt-dark/60 text-sm">
             Джутове поле.
           </figcaption>
         </figure>
@@ -52,7 +51,7 @@ const JuteAndJute = ({
         <p className="section-p md:text-[1.5rem] text-Gray-dark">
           <img
             src={texture}
-            className="w-1/2 sm:w-2/5 rounded-md float-left"
+            className="w-1/2 sm:w-2/5 rounded-md float-left mr-2"
             alt="Текстура полотна вироблена із органічної джутової нитки"
             title="Текстура полотна вироблена із органічної джутової нитки"
           />
@@ -76,7 +75,7 @@ const JuteAndJute = ({
           </p>
 
           <p className="section-p md:text-[1.5rem] text-Gray-dark">
-            Обирайте продукцію що прикрасить ваш інтер'єр:
+            Обирайте продукцію що дозволить відчути дотик природи:
           </p>
         </div>
       </Container>

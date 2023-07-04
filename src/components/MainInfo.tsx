@@ -5,13 +5,13 @@ import boxes from '/icons/boxes.svg';
 const MainInfo = () => {
   return (
     <>
-      <div className="h-[50vh] w-full bg-gray-100 bg-[url('/images/jute-9-800.jpg')] md:bg-[url('/images/jute-9-1200.jpg')] bg-center bg-no-repeat bg-cover text-center opacity-90"></div>
-
-      <Container idName="#">
-        <h2 className="mb-8 p-6 font-semibold text-2xl md:text-3xl lg:text-4xl align-middle max-w-xl mx-auto text-Gray-dark">
+      <div className="h-[50vh] w-full bg-gray-100 bg-[url('/images/jute-9-800.jpg')] md:bg-[url('/images/jute-9-1200.jpg')] bg-center bg-no-repeat bg-cover text-center opacity-90 flex items-end">
+        <h2 className="max-w-xl mx-auto px-28 py-16 text-4xl md:text-5xl lg:text-6xl font-semibold text-transparent bg-gradient-to-r from-slate-100 to-gray-200 bg-clip-text">
           Садок вишневий коло хати.
         </h2>
+      </div>
 
+      <Container idName="#">
         <div className="px-4 py-8 flex-1 basis-1/2 text-xl md:text-2xl text-center text-Gray-dark">
           <p className="mb-4 px-4 leading-relaxed first-line:tracking-widest">
             Садок вишневий коло хати, Хрущі над вишнями гудуть, Плугатарі з
