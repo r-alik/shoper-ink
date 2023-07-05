@@ -15,10 +15,10 @@ const WineBags = ({
   return (
     <>
       <Container idName="winebags">
-        <figure className="mb-8">
+        <figure className="w-full mb-8">
           <img
             src={bags}
-            className="rounded-md"
+            className="w-full rounded-md"
             alt="Бавовняні сумки для пляшки вина"
             title="Бавовняні сумки для пляшки вина"
           />
@@ -49,7 +49,7 @@ const WineBags = ({
       <GalleryList
         onModalOpen={onModalOpen}
         pictures={pictures}
-        bgImage={bags}
+        bgImage="/images/decor-wine-bags-2.jpg"
       />
 
       <HorizontalDivider />

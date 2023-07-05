@@ -1,3 +1,4 @@
+import { useWindowWidth } from '@react-hook/window-size/throttled';
 import Container from '../shared/Container';
 import GalleryList from '../shared/GalleryList';
 import HorizontalDivider from '../shared/HorizontalDivider';
@@ -5,8 +6,9 @@ import HorizontalDivider from '../shared/HorizontalDivider';
 import pictures from '../data/jute.json';
 
 import juteField from '/images/decor-jute-field-1.jpg';
-import texture from '/images/decor-texture-1-square.jpg';
-import placemat from '/images/decor-placemat-1.jpg';
+import textureSquare from '/images/decor-texture-1-square.jpg';
+import texture from '/images/decor-texture-1.jpg';
+import placemat from '/images/decor-placemat-1-square-480.jpg';
 import ListElement from '../shared/ListElement';
 
 const JuteAndJute = ({
@@ -14,13 +16,15 @@ const JuteAndJute = ({
 }: {
   onModalOpen: (link: string, title: string) => void;
 }) => {
+  const onlyWidth = useWindowWidth();
+
   return (
     <>
       <Container idName="juteAndJute">
-        <figure className="mb-8">
+        <figure className="w-full mb-8">
           <img
             src={juteField}
-            className="rounded-md"
+            className="w-full rounded-md"
             alt="Снопи зібранної джутової сировини на джутовому полі"
             title="Снопи зібранної джутової сировини на джутовому полі"
           />
@@ -29,13 +33,13 @@ const JuteAndJute = ({
           </figcaption>
         </figure>
 
-        <div className="my-8 standard-text md:text-[1.5rem] text-Gray-dark bg-Peach py-2 rounded-lg">
+        <div className="w-full my-8 p-2 standard-text md:text-[1.5rem] text-Gray-dark bg-Peach rounded-lg">
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
             Чому джут?
           </h3>
           <div className="flex justify-around items-center gap-2">
             <img
-              src={texture}
+              src={onlyWidth < 640 ? textureSquare : texture}
               className="w-1/3 rounded-md shrink-0"
               alt="Текстура полотна вироблена із органічної джутової нитки"
               title="Текстура полотна вироблена із органічної джутової нитки"
@@ -80,6 +84,8 @@ const JuteAndJute = ({
           </p>
         </div>
       </Container>
+
+      <HorizontalDivider />
 
       <GalleryList
         pictures={pictures}
