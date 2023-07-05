@@ -39,7 +39,7 @@
   .standard-text {
     font-size: 1.25rem;
     line-height: 1.625;
-    text-align: center;
+    text-align: left;
   }
 
   .section-p {
@@ -47,9 +47,6 @@
     padding: 0.25rem 1rem;
     line-height: 1.625;
     font-size: 1.25rem;
-    text-align: center;
-  }
-  .section-p::first-line {
-    letter-spacing: 0.1rem;
+    text-align: left;
   }
 }

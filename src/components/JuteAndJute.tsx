@@ -34,7 +34,7 @@ const JuteAndJute = ({
         </figure>
 
         <div className="w-full my-8 p-2 standard-text md:text-[1.5rem] text-Gray-dark bg-Peach rounded-lg">
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
+          <h3 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
             Чому джут?
           </h3>
           <div className="flex justify-around items-center gap-2">

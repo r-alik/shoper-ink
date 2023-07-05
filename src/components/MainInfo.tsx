@@ -12,7 +12,7 @@ const MainInfo = () => {
           Садок вишневий коло хати.
         </h2>
 
-        <div className="px-4 py-8 flex-1 basis-1/2 text-xl md:text-2xl text-center text-Gray-dark">
+        <div className="px-4 py-8 flex-1 basis-1/2 text-xl md:text-2xl text-left text-Gray-dark">
           <p className="mb-4 px-4 leading-relaxed first-line:tracking-widest">
             Садок вишневий коло хати, Хрущі над вишнями гудуть, Плугатарі з
             плугами йдуть, Співають ідучи дівчата, А матері вечерять ждуть.
