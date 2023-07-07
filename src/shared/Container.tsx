@@ -10,8 +10,7 @@ const Container = ({
   return (
     <section
       id={idName}
-      className="flex flex-col justify-start items-center mx-auto  min-h-[50vh] w-11/12 max-w-5xl scroll-mt-16
-      "
+      className="flex flex-col justify-start items-center mx-auto  min-h-[50vh] w-11/12 max-w-5xl scroll-mt-16"
     >
       {children}
     </section>

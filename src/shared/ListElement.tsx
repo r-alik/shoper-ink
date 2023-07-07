@@ -1,4 +1,4 @@
-import heart from '/public/icons/heart.svg';
+import heart from '/icons/heart.svg';
 
 interface ListElementProps {
   text: string;

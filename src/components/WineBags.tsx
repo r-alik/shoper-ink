@@ -26,14 +26,14 @@ const WineBags = ({
 
         <SectionTitle title="Wine Bags" imageLink="/icons/wine-basket.svg" />
 
-        <p className="section-p md:text-[1.5rem] text-Gray-dark">
+        <p className="standard-text md:text-[1.5rem] text-Gray-dark">
           Особливий шарм в кожній пляшці вина заслуговує на найкраще обгортання.
           Наші вишукані винні сумки - це втілення елегантності та ручної роботи.
           Виготовлені з практичного матеріалу, вони створені, щоб надати вашому
           улюбленому вину витончений образ.
         </p>
 
-        <p className="section-p md:text-[1.5rem] text-Gray-dark">
+        <p className="standard-text md:text-[1.5rem] text-Gray-dark">
           <img
             src={shopper}
             className="w-1/2 sm:w-2/5 rounded-md float-left mr-2"
@@ -46,11 +46,7 @@ const WineBags = ({
           вину гідне обгортання з нашими ручними бавовняними сумками.
         </p>
       </Container>
-      <GalleryList
-        onModalOpen={onModalOpen}
-        pictures={pictures}
-        bgImage="/images/decor-wine-bags-2.jpg"
-      />
+      <GalleryList onModalOpen={onModalOpen} pictures={pictures} />
 
       <HorizontalDivider />
     </>

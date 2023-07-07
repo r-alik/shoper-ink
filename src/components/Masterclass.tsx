@@ -9,7 +9,7 @@ const Masterclass = () => {
     <Container idName="masterclass">
       <SectionTitle title="Майстер клас" imageLink="/icons/sew.svg" />
 
-      <p className="section-p md:text-[1.5rem] text-Gray-dark">
+      <p className="standard-text md:text-[1.5rem] text-Gray-dark">
         Садок вишневий коло хати, Хрущі над вишнями гудуть, Плугатарі з плугами
         йдуть, Співають ідучи дівчата, А матері вечерять ждуть.
       </p>
@@ -20,7 +20,7 @@ const Masterclass = () => {
         autoPlay
         className="rounded-lg"
       ></video>
-      <p className="section-p md:text-[1.5rem] text-Gray-dark">
+      <p className="standard-text md:text-[1.5rem] text-Gray-dark">
         Сем'я вечеря коло хати, Вечірня зіронька встає. Дочка вечерять подає, А
         мати хоче научати, Так соловейко не дає. Поклала мати коло хати
         Маленьких діточок своїх; Сама заснула коло їх. Затихло все, тілько

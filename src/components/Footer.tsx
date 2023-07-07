@@ -10,11 +10,11 @@ const Footer = () => {
       <div className="flex flex-col sm:flex-row gap-10 sm:gap-3 justify-around items-center w-11/12 max-w-5xl mx-auto">
         <div>
           <div
-            className="flex gap-3 cursor-pointer justify-center mb-2 md:text-2xl"
+            className="flex gap-2 cursor-pointer justify-center mb-2 md:text-2xl"
             onClick={() => location.replace('/#')}
           >
+            <img src={heart} width={18} alt="" />
             <span>SHOPER.INK</span>
-            <img src={heart} width={20} alt="" />
           </div>
 
           <hr className="w-3/4 mx-auto bg-Accent-light border-transparent" />

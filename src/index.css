@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family: '';
-  src: url('../public/fonts/....ttf');
-} */
+@font-face {
+  font-family: 'KurkaLapoyu';
+  src: url('/fonts/KurkaLapoyu-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Koziiar';
+  src: url('/fonts/Koziyar-Regular.0.1.otf');
+}
+
+@font-face {
+  font-family: 'Kotyhoroshko';
+  src: url('/fonts/Kotyhoroshko-Regular.0.2.otf');
+}
+
+@font-face {
+  font-family: 'Veles';
+  src: url('/fonts/Veles-Regular.0.9.2.otf');
+}
 
 @layer base {
   :root {
@@ -15,16 +30,8 @@
   body {
     overflow-x: hidden;
     padding-inline: 0.5rem;
-  }
-
-  section:not(:first-of-type) {
-    padding-block-start: 2rem;
-  }
-
-  @media screen and (min-width: 768px) {
-    section:not(:first-of-type) {
-      padding-block-start: 3rem;
-    }
+    /* font-family: 'KurkaLapoyu'; */
+    font-family: 'Veles';
   }
 }
 
@@ -32,6 +39,7 @@
   .section-min-height {
     min-height: 100vh;
   }
+
   .padding-values {
     padding: min(20vh, 10rem) 20vw;
   }
@@ -42,11 +50,31 @@
     text-align: left;
   }
 
-  .section-p {
-    margin-bottom: 2rem;
-    padding: 0.25rem 1rem;
-    line-height: 1.625;
-    font-size: 1.25rem;
-    text-align: left;
+  @media screen and (min-width: 640px) {
+    .standard-text {
+      font-size: 1.5rem;
+    }
   }
 }
+
+/* 
+.standard-text {
+  margin-bottom: 2rem;
+  padding: 0.25rem 0.5rem;
+  line-height: 1.625;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+
+section:not(:first-of-type) {
+    padding-block-start: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    section:not(:first-of-type) {
+      padding-block-start: 3rem;
+    }
+  }
+
+*/

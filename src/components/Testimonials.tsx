@@ -34,10 +34,10 @@ const Testimonials = () => {
     <Container idName="testimonials">
       <SectionTitle title="Відгуки" imageLink="/icons/feedback.svg" />
 
-      <p className="section-p md:text-[1.5rem] text-Gray-dark md:mb-1">
+      <p className="standard-text md:text-[1.5rem] text-Gray-dark md:mb-1">
         Ми вдячні нашим замовникам за відгуки. Зворотній звя'зок дуже важливий.
       </p>
-      <p className="section-p md:text-[1.5rem] text-Gray-dark">
+      <p className="standard-text md:text-[1.5rem] text-Gray-dark">
         Ось деякі з відгуків:
       </p>
       {testimonials.map(t => {
