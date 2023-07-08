@@ -22,7 +22,7 @@ const JuteAndJute = ({
   return (
     <>
       <Container idName="juteAndJute">
-        <div className="w-full p-4 flex justify-between gap-3  text-Gray-dark bg-Peach rounded-lg border border-Accent-light/30">
+        <article className="w-full margin-bottom p-4 flex justify-between gap-3 text-Gray-dark bg-Peach rounded-lg border border-Accent-light/30">
           <img
             src={textureSquare}
             className="w-1/2 md:w-2/5 rounded-md"
@@ -40,35 +40,42 @@ const JuteAndJute = ({
               <ListElement text="Довговічність" />
             </ul>
           </div>
-        </div>
+        </article>
 
-        <article className="flex justify-center items-start gap-10 p-4">
-          <p className="flex-1 py-4 standard-text text-Gray-dark">
+        <article className="flex justify-center items-start gap-10 margin-bottom">
+          <p className="flex-1 lg:pt-6 standard-text text-Gray-dark">
             <img
-              className="w-2/3 py-4"
+              className="w-1/2 p-1 mb-2"
               src={juteLogo}
               alt="Логотип для серії Джут Енд Джут"
             />
-            - це продукція вироблена з натурального органічного матеріалу.
+            <span className="font-semibold">
+              {' '}
+              - це продукція вироблена з натурального органічного матеріалу.
+            </span>
             <br className="mb-6 md:mb-9" />
             {onlyWidth < MD_BRACKPOINT && (
               <img
                 src={placemat320}
-                className="w-1/2 rounded-md float-right"
+                className="w-1/2 rounded-md float-right ml-3"
                 alt="Стильна джутова підставка на стіл"
                 title="Стильна джутова підставка на стіл"
               />
             )}
-            Серія Jute&Jute - це поєднання природи та майстерності, що
-            втілюється у кожній речі. Кожна річ індівідуальна та унікальна тому
-            що зроблена руками майстрині. Від обробки джуту до створення
-            витончених виробів - кожна деталь має особливе значення.
+            Серія{' '}
+            <span className="font-semibold">
+              Jute<span className="text-Accent-dark">&</span>Jute
+            </span>{' '}
+            - це поєднання природи та майстерності, що втілюється у кожній речі.
+            Кожна річ індівідуальна та унікальна тому що зроблена руками
+            майстрині. Від обробки джуту до створення витончених виробів - кожна
+            деталь має особливе значення.
           </p>
 
           {onlyWidth > MD_BRACKPOINT && (
             <img
               src={placemat480}
-              className="flex-grow-0 w-1/3 sm:w-2/5 rounded-md"
+              className="flex-grow-0 w-1/3 sm:w-2/5 h-full rounded-md"
               alt="Стильна джутова підставка на стіл"
               title="Стильна джутова підставка на стіл"
             />
