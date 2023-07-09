@@ -20,8 +20,8 @@ const JuteAndJute = ({
   const MD_BRACKPOINT = 768;
 
   return (
-    <>
-      <Container idName="juteAndJute">
+    <div id="juteAndJute" className="margin-bottom">
+      <Container>
         <article className="w-full margin-bottom p-4 flex justify-between gap-3 text-Gray-dark bg-Peach rounded-lg border border-Accent-light/30">
           <img
             src={textureSquare}
@@ -34,6 +34,7 @@ const JuteAndJute = ({
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
               Чому джут?
             </h3>
+
             <ul>
               <ListElement text="Природний матеріал" />
               <ListElement text="Практичність" />
@@ -45,7 +46,7 @@ const JuteAndJute = ({
         <article className="flex justify-center items-start gap-10 margin-bottom">
           <p className="flex-1 lg:pt-6 standard-text text-Gray-dark">
             <img
-              className="w-1/2 p-1 mb-2"
+              className="w-2/5 p-1 mb-2"
               src={juteLogo}
               alt="Логотип для серії Джут Енд Джут"
             />
@@ -89,8 +90,7 @@ const JuteAndJute = ({
         onModalOpen={onModalOpen}
         title="Обирайте продукцію що дозволить відчути дотик природи:"
       />
-      <HorizontalDivider />
-    </>
+    </div>
   );
 };
 

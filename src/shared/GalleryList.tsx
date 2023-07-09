@@ -1,9 +1,6 @@
-import { UIEvent } from 'react';
+import { SyntheticEvent, UIEvent } from 'react';
 import GalleryItem from './GalleryItem';
 import { PictureType } from './types/itemShape';
-
-import arrowLeft from '/icons/arrow-left.svg';
-import arrowRight from '/icons/arrow-right.svg';
 
 type GalleryListType = {
   pictures: PictureType[];
@@ -12,12 +9,17 @@ type GalleryListType = {
 };
 
 const GalleryList = ({ pictures, onModalOpen, title }: GalleryListType) => {
-  const handleScroll = (e: UIEvent<HTMLUListElement>) => {
-    const sl = (e.target as HTMLUListElement).scrollLeft;
-    const clWidth = (e.target as HTMLUListElement).clientWidth;
-    const scrollWidth = (e.target as HTMLUListElement).scrollWidth;
+  const handleClick = (e: SyntheticEvent) => {
+    const curEl = e.target as HTMLElement;
+    const ulEl = curEl.closest('[data-carousel]')?.querySelector('ul');
 
-    console.log(sl, clWidth, scrollWidth);
+    if (!ulEl || !ulEl.scrollWidth) return;
+
+    const clientView = ulEl.clientWidth;
+
+    curEl.dataset.button === 'left'
+      ? ulEl.scrollBy(-clientView / 2, 0)
+      : ulEl.scrollBy(clientView / 2, 0);
   };
 
   return (
@@ -27,23 +29,41 @@ const GalleryList = ({ pictures, onModalOpen, title }: GalleryListType) => {
           {title}
         </h3>
       )}
-      <ul
-        onScroll={handleScroll}
-        className="
-          max-w-screen-2xl mx-auto px-2 
+
+      <div className="relative" data-carousel>
+        <button
+          onClick={handleClick}
+          data-button="left"
+          className="absolute px-2 py-1 bg-Accent-dark font-bold opacity-50 hover:opacity-100 rounded-lg top-1/2 left-4 2xl:left-20 text-4xl md:text-5xl z-10 text-white"
+          type="button"
+        >
+          &#8656;
+        </button>
+        <button
+          onClick={handleClick}
+          data-button="right"
+          className="absolute px-2 py-1 bg-Accent-dark font-bold opacity-50 hover:opacity-100 rounded-lg top-1/2 right-4 2xl:right-20 text-4xl md:text-5xl z-10 text-white"
+          type="button"
+        >
+          &#8658;
+        </button>
+        <ul
+          className="
+          max-w-screen-2xl mx-auto px-2 py-1 rounded-md
           flex-grow  
           grid gap-[var(--gap)] grid-flow-col 
           auto-cols-[70%] sm:auto-cols-[38%] lg:auto-cols-[25%] 
           overflow-x-scroll scroll-p-4 snap-mandatory snap-x"
-      >
-        {pictures.map(pic => {
-          return (
-            <li key={pic.id}>
-              <GalleryItem onModalOpen={onModalOpen} picDetail={pic} />
-            </li>
-          );
-        })}
-      </ul>
+        >
+          {pictures.map(pic => {
+            return (
+              <li key={pic.id}>
+                <GalleryItem onModalOpen={onModalOpen} picDetail={pic} />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

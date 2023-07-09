@@ -1,7 +1,10 @@
+import { useWindowWidth } from '@react-hook/window-size/throttled';
 import Container from '../shared/Container';
 import HorizontalDivider from '../shared/HorizontalDivider';
 
 const MainInfo = () => {
+  const onlyWidth = useWindowWidth();
+
   return (
     <section className="margin-bottom">
       <div className="h-[40vh] lg:h-[45vh] w-full margin-bottom bg-gray-100 bg-[url('/images/jute-9-800.jpg')] md:bg-[url('/images/jute-9-1200.jpg')] bg-center md:bg-top bg-no-repeat bg-cover opacity-90"></div>
@@ -25,7 +28,7 @@ const MainInfo = () => {
             href="tel:+3805551112345"
             className="w-2/3 block  rounded-md mx-auto px-4 py-4 border-transparent bg-Accent-dark hover:bg-Accent-light font-bold text-2xl text-center text-white font-['Veles']"
           >
-            +38 (555) 111 23 45
+            {onlyWidth > 640 && 'Замовити: '} (555) 111-23-45
           </a>
         </div>
       </Container>
