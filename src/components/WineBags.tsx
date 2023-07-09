@@ -4,7 +4,6 @@ import GalleryList from '../shared/GalleryList';
 import HorizontalDivider from '../shared/HorizontalDivider';
 
 import pictures from '../data/wine.json';
-import bags from '/images/decor-wine-bags-2.jpg';
 import shopper from '/images/decor-shopper-2-art.jpg';
 
 const WineBags = ({
@@ -15,14 +14,7 @@ const WineBags = ({
   return (
     <>
       <Container idName="winebags">
-        <figure className="w-full mb-8">
-          <img
-            src={bags}
-            className="w-full rounded-md"
-            alt="Бавовняні сумки для пляшки вина"
-            title="Бавовняні сумки для пляшки вина"
-          />
-        </figure>
+        <HorizontalDivider />
 
         <SectionTitle title="Wine Bags" imageLink="/icons/wine-basket.svg" />
 
