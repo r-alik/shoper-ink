@@ -1,4 +1,5 @@
 import { SyntheticEvent, useState } from 'react';
+
 import { menu } from '../data/menuItem';
 
 const MenuMobile = () => {

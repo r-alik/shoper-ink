@@ -51,7 +51,3 @@ function GalleryItem({
 }
 
 export default GalleryItem;
-
-/*
-    bg-gradient-to-br from-Peach to-white shadow-[10px_10px_20px_#8c8985,_-10px_-10px_20px_#ffffff] 
- */

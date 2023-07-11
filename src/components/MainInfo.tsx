@@ -1,4 +1,5 @@
 import { useWindowWidth } from '@react-hook/window-size/throttled';
+
 import Container from '../shared/Container';
 import HorizontalDivider from '../shared/HorizontalDivider';
 
@@ -37,9 +38,3 @@ const MainInfo = () => {
 };
 
 export default MainInfo;
-
-/*
- <h2 className="max-w-xl mx-auto px-28 py-16 text-4xl md:text-5xl lg:text-6xl font-semibold text-transparent bg-gradient-to-r from-orange-300 to-gray-100 bg-clip-text">
-          Садок вишневий коло хати.
-        </h2>
-*/

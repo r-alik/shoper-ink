@@ -22,7 +22,3 @@ const Container = ({
 };
 
 export default Container;
-
-/*
-border-Accent-light/30 border-b-2 
-*/

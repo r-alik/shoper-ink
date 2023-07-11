@@ -1,4 +1,5 @@
 import { useWindowWidth } from '@react-hook/window-size/throttled';
+
 import facebook from '/icons/socials-facebook.svg';
 import instagram from '/icons/socials-instagram.svg';
 import youtube from '/icons/socials-youtube.svg';

@@ -1,6 +1,8 @@
 import { useWindowWidth } from '@react-hook/window-size/throttled';
+
 import MenuMobile from './MenuMobile';
 import MenuDesktop from './MenuDesktop';
+
 import logo from '/icons/logo.svg';
 
 const Header = () => {

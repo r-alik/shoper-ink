@@ -1,5 +1,7 @@
-import { SyntheticEvent, UIEvent } from 'react';
+import { SyntheticEvent } from 'react';
+
 import GalleryItem from './GalleryItem';
+
 import { PictureType } from './types/itemShape';
 
 type GalleryListType = {
@@ -74,6 +76,5 @@ export default GalleryList;
 
 /*
 ul - shadow-[10px_10px_20px_#9e9e9e,_-10px_-10px_20px_#ffffff]
-
 
 */

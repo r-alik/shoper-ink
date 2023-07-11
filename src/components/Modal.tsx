@@ -34,23 +34,3 @@ const Modal = (props: ModalShape) => {
 };
 
 export default Modal;
-
-/*
-    <span className="flex-1">&#215;</span>
-==============================
-
-w-8 h-8
-bg-[url('/icons/close-icon.svg')]
-          bg-Accent-dark  rounded-full outline-transparent border-transparent 
-          
-          hover:border-transparent 
-          hover:bg-Accent-light
-          focus-visible:border-none
-*/
-
-/*
-        
-        text-3xl text-white font-bold w-10 aspect-square border-2 rounded-md top-4 right-2 z-50 sm:hidden bg-Accent-light`}
-        <span>&#9776;</span>
-
-*/

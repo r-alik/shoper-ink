@@ -1,4 +1,5 @@
 import { useWindowWidth } from '@react-hook/window-size/throttled';
+
 import Container from '../shared/Container';
 import GalleryList from '../shared/GalleryList';
 import ListElement from '../shared/ListElement';

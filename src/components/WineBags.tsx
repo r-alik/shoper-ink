@@ -2,10 +2,9 @@ import Container from '../shared/Container';
 import GalleryList from '../shared/GalleryList';
 import HorizontalDivider from '../shared/HorizontalDivider';
 
-import pictures from '../data/wine.json';
-// import shopper from '/images/decor-shopper-2-art.jpg';
-// import wineBasket from '/icons/wine-basket.svg';
 import wineBag from '/images/wine-1-800.jpg';
+
+import pictures from '../data/wine.json';
 
 const WineBags = ({
   onModalOpen,
