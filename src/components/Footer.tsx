@@ -26,28 +26,39 @@ const Footer = () => {
         <a
           href="tel:+3805551112345"
           className="block px-6 py-4 border-2 border-Accent-light rounded-md font-['Veles'] font-bold text-xl md:text-2xl hover:bg-Accent-dark"
+          title="Замовити за телефоном: (555) 111-23-45"
         >
-          +38 (555) 111 23 45
+          +38 (555) 111-23-45
         </a>
 
         <ul className="flex gap-6 justify-center items-center">
-          <li className="hover:scale-105 transition-all">
+          <li className="hover:scale-105 transition-all" title="Написати листа">
             <a target="_blank" href="email:qwerty@qwerty.com">
               <img src={email} width="28" alt="" />
             </a>
           </li>
-          <li className="hover:scale-105 transition-all">
+          <li
+            className="hover:scale-105 transition-all"
+            title="Перейти на сторінку в Інстаграм"
+          >
             <a target="_blank" href="https://www.instagram.com">
               <img src={instagram} width="28" alt="" />
             </a>
           </li>
-          <li className="hover:scale-105 transition-all">
+
+          <li
+            className="hover:scale-105 transition-all"
+            title="Перейти на сторінку Фейсбук"
+          >
             <a target="_blank" href="https://www.facebook.com">
               <img src={facebook} width="28" alt="" />
             </a>
           </li>
-          <li className="hover:scale-105 transition-all">
-            <a target="_blank" href="https://www.youtube.com">
+          <li
+            className="hover:scale-105 transition-all"
+            title="Перейти на сторінку Ютуб"
+          >
+            <a target="_blank" title="Перейти на сторінку Ютуб">
               <img src={youtube} width="28" alt="" />
             </a>
           </li>

@@ -28,6 +28,7 @@ const MainInfo = () => {
           <a
             href="tel:+3805551112345"
             className="w-2/3 block  rounded-md mx-auto px-4 py-4 border-transparent bg-Accent-dark hover:bg-Accent-light font-bold text-2xl text-center text-white font-['Veles']"
+            title="Замовити за телефоном: (555) 111-23-45"
           >
             {onlyWidth > 640 && 'Замовити: '} (555) 111-23-45
           </a>
