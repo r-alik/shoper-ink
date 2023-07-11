@@ -9,20 +9,28 @@ const Testimonial = ({
   text,
   name,
   city,
+  avatar,
 }: {
   text: string;
   name: string;
   city: string;
+  avatar: string;
 }) => {
   return (
     <figure className="mb-4">
-      <blockquote className="rounded-2xl bg-Peach px-8 py-3 text-Gray-dark italic">
-        <p className="text-left">
-          <span className="not-italic font-bold text-Accent-dark">&#9786;</span>{' '}
-          - {text}
-        </p>
+      <blockquote className="px-8 py-3 rounded-2xl bg-Peach text-Gray-dark italic">
+        <div className="flex justify-between items-center gap-4 lg:gap-10 ">
+          <img
+            src={avatar}
+            alt={`Фото ілюстративне. ${name}`}
+            title={`Фото ілюстративне. ${name}`}
+            width="60"
+            className="rounded-full"
+          />
+          <p> {text}</p>
+        </div>
         <figcaption className="text-right">
-          &#8212; {name} ({city})
+          &#8212; ({name}, {city})
         </figcaption>
       </blockquote>
     </figure>
@@ -31,7 +39,7 @@ const Testimonial = ({
 
 const Testimonials = () => {
   return (
-    <Container idName="testimonials">
+    <Container idName="testimonials" styles="margin-bottom">
       <HorizontalDivider />
 
       <SectionTitle title="Відгуки" imageLink="/icons/feedback.svg" />
@@ -44,13 +52,17 @@ const Testimonials = () => {
       </p>
       {testimonials.map(t => {
         return (
-          <Testimonial city={t.city} text={t.text} name={t.name} key={t.id} />
+          <Testimonial
+            city={t.city}
+            text={t.text}
+            name={t.name}
+            key={t.id}
+            avatar={t.avatar}
+          />
         );
       })}
 
       <img src={shoperGirl} alt="" width={80} />
-
-      <HorizontalDivider />
     </Container>
   );
 };

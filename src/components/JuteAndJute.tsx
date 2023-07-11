@@ -19,16 +19,19 @@ const JuteAndJute = ({
   const MD_BRACKPOINT = 768;
 
   return (
-    <div id="juteAndJute" className="margin-bottom">
+    <div
+      id="juteAndJute"
+      className="margin-bottom scroll-mt-16 lg:scroll-mt-[84px]"
+    >
       <Container>
         <article className="w-full margin-bottom p-4 flex justify-between gap-3 text-Gray-dark bg-Peach rounded-lg border border-Accent-light/30">
+          <h3 hidden>Чому джут?</h3>
           <img
             src={textureSquare}
             className="w-1/2 md:w-2/5 rounded-md"
             alt="Текстура полотна вироблена із органічної джутової нитки"
             title="Текстура полотна вироблена із органічної джутової нитки"
           />
-
           <div className="w-1/2 flex flex-col justify-center items-center standard-text">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
               Чому джут?
@@ -43,6 +46,8 @@ const JuteAndJute = ({
         </article>
 
         <article className="flex justify-center items-start gap-10 margin-bottom">
+          <h3 hidden>Про продукцію серії ДжутЕндДжут</h3>
+
           <p className="flex-1 lg:pt-6 standard-text text-Gray-dark">
             {onlyWidth < MD_BRACKPOINT && (
               <img
@@ -81,7 +86,6 @@ const JuteAndJute = ({
             />
           )}
         </article>
-        {/* <HorizontalDivider /> */}
       </Container>
 
       <GalleryList
@@ -94,18 +98,3 @@ const JuteAndJute = ({
 };
 
 export default JuteAndJute;
-
-/*
-    <figure className="w-full mb-8">
-          <img
-            src={juteField}
-            className="w-full rounded-md"
-            alt="Снопи зібранної джутової сировини на джутовому полі"
-            title="Снопи зібранної джутової сировини на джутовому полі"
-          />
-          <figcaption className="italic text-Txt-dark/60 text-sm">
-            Джутове поле.
-          </figcaption>
-        </figure>
-
-*/

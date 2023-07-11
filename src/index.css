@@ -30,16 +30,11 @@
   body {
     overflow-x: hidden;
     padding-inline: 0.5rem;
-    /* font-family: 'KurkaLapoyu'; */
     font-family: 'sans-serif';
   }
 }
 
 @layer utilities {
-  .section-min-height {
-    min-height: 100vh;
-  }
-
   .margin-bottom {
     margin-block-end: 80px;
   }
@@ -70,25 +65,3 @@
     }
   }
 }
-
-/* 
-.standard-text {
-  margin-bottom: 2rem;
-  padding: 0.25rem 0.5rem;
-  line-height: 1.625;
-  font-size: 1.25rem;
-  text-align: left;
-}
-
-
-section:not(:first-of-type) {
-    padding-block-start: 2rem;
-  }
-
-  @media screen and (min-width: 768px) {
-    section:not(:first-of-type) {
-      padding-block-start: 3rem;
-    }
-  }
-
-*/

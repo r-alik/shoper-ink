@@ -6,7 +6,8 @@ import masterVideo from '/video/production-480.mp4';
 
 const Masterclass = () => {
   return (
-    <Container idName="masterclass">
+    <Container idName="masterclass" styles="margin-bottom">
+      <HorizontalDivider />
       <SectionTitle title="Майстер клас" imageLink="/icons/sew.svg" />
 
       <p className="standard-text md:text-[1.5rem] text-Gray-dark">
@@ -26,8 +27,6 @@ const Masterclass = () => {
         Маленьких діточок своїх; Сама заснула коло їх. Затихло все, тілько
         дівчата Та соловейко не затих.
       </p>
-
-      <HorizontalDivider />
     </Container>
   );
 };

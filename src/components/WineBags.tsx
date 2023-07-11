@@ -13,12 +13,16 @@ const WineBags = ({
   onModalOpen: (link: string, title: string) => void;
 }) => {
   return (
-    <div id="winebags" className="margin-bottom">
+    <div
+      id="winebags"
+      className="margin-bottom scroll-mt-16 lg:scroll-mt-[84px]"
+    >
       <Container>
         <HorizontalDivider />
 
         {/* <SectionTitle title="Wine Bags" imageLink="/icons/wine-basket.svg" /> */}
         <article className="margin-bottom pt-6">
+          <h3 hidden>Про продукцію серії Winebags</h3>
           <p className="standard-text md:text-[1.5rem] text-Gray-dark">
             <img
               src={wineBag}
@@ -32,12 +36,6 @@ const WineBags = ({
           </p>
 
           <p className="standard-text md:text-[1.5rem] text-Gray-dark">
-            {/* <img
-            src={shopper}
-            className="w-1/2 sm:w-2/5 rounded-md float-left mr-2"
-            alt="Текстура полотна вироблена із органічної джутової нитки"
-            title="Текстура полотна вироблена із органічної джутової нитки"
-          /> */}
             Виберіть із різноманіття кольорів, малюнків та розмірів, щоб знайти
             ідеальну сумку для вашого вина. Наші винні сумки підкреслять ваше
             розуміння справжнього смаку та незабутнього стилю. Подаруйте вашому

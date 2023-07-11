@@ -4,34 +4,39 @@
     "name": "Саша",
     "text": "Нарешті я знайшов ідеальний подарунок. Залишилось знайти того, кому подарувати",
     "stars": 5,
-    "city": "Київ"
+    "city": "Київ",
+    "avatar": "/images/testimonials-man-1.jpg"
   },
   {
     "id": 2,
-    "name": "Анатоль",
+    "name": "Галина",
     "text": "Найкращий подарунок для родичиів. Дякую!",
     "stars": 5,
-    "city": "Львів"
+    "city": "Львів",
+    "avatar": "/images/testimonials-woman-1.jpg"
   },
   {
     "id": 3,
     "name": "Женя",
     "text": "Швидко виготовили шоппери. Гарна якість. Сувенірка з корпоративним візерунком",
     "stars": 5,
-    "city": "Київ"
+    "city": "Київ",
+    "avatar": "/images/testimonials-woman-2.jpg"
   },
   {
     "id": 4,
     "name": "Антоніна",
     "text": "Дякую! Чудові сумки. Всі питають де замовляли",
     "stars": 5,
-    "city": "Одеса"
+    "city": "Одеса",
+    "avatar": "/images/testimonials-woman-3.jpg"
   },
   {
     "id": 5,
     "name": "Роберт",
     "text": "Уважна майстриня. Висока якість. Замовлятимемо ще",
     "stars": 5,
-    "city": "Київ"
+    "city": "Київ",
+    "avatar": "/images/testimonials-man-2.jpg"
   }
 ]
