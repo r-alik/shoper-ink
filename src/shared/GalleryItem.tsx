@@ -16,8 +16,8 @@ function GalleryItem({
 }) {
   return (
     <div
-      className="h-full flex flex-col justify-start items-stretch gap-4 border rounded-lg p-2 snap-start 
-    bg-gradient-to-br from-Peach to-white shadow-[10px_10px_20px_#8c8985,_-10px_-10px_20px_#ffffff] 
+      className="h-full flex flex-col justify-start items-stretch gap-4 border border-Accent-light/30 rounded-lg p-2 snap-start 
+      bg-white
     [&>*:not(:first-child)]:px-2
     "
     >
@@ -51,3 +51,7 @@ function GalleryItem({
 }
 
 export default GalleryItem;
+
+/*
+    bg-gradient-to-br from-Peach to-white shadow-[10px_10px_20px_#8c8985,_-10px_-10px_20px_#ffffff] 
+ */

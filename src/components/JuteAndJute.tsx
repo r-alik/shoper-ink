@@ -1,7 +1,6 @@
 import { useWindowWidth } from '@react-hook/window-size/throttled';
 import Container from '../shared/Container';
 import GalleryList from '../shared/GalleryList';
-import HorizontalDivider from '../shared/HorizontalDivider';
 import ListElement from '../shared/ListElement';
 
 import pictures from '../data/jute.json';
@@ -45,6 +44,14 @@ const JuteAndJute = ({
 
         <article className="flex justify-center items-start gap-10 margin-bottom">
           <p className="flex-1 lg:pt-6 standard-text text-Gray-dark">
+            {onlyWidth < MD_BRACKPOINT && (
+              <img
+                src={placemat320}
+                className="w-1/2 rounded-md float-right ml-3"
+                alt="Стильна джутова підставка на стіл"
+                title="Стильна джутова підставка на стіл"
+              />
+            )}
             <img
               className="w-2/5 p-1 mb-2"
               src={juteLogo}
@@ -55,14 +62,6 @@ const JuteAndJute = ({
               - це продукція вироблена з натурального органічного матеріалу.
             </span>
             <br className="mb-6 md:mb-9" />
-            {onlyWidth < MD_BRACKPOINT && (
-              <img
-                src={placemat320}
-                className="w-1/2 rounded-md float-right ml-3"
-                alt="Стильна джутова підставка на стіл"
-                title="Стильна джутова підставка на стіл"
-              />
-            )}
             Серія{' '}
             <span className="font-semibold">
               Jute<span className="text-Accent-dark">&</span>Jute
@@ -82,7 +81,7 @@ const JuteAndJute = ({
             />
           )}
         </article>
-        <HorizontalDivider />
+        {/* <HorizontalDivider /> */}
       </Container>
 
       <GalleryList

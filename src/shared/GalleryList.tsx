@@ -22,10 +22,12 @@ const GalleryList = ({ pictures, onModalOpen, title }: GalleryListType) => {
       : ulEl.scrollBy(clientView / 2, 0);
   };
 
+  // #fffb8b
+
   return (
-    <div>
+    <div className="bg-gradient-to-br from-[#FFD700]/30 to-[#eedc7d]/50 py-10">
       {title && (
-        <h3 className="px-8 md:px-12 pt-4 pb-8 font-semibold text-center text-xl sm:text-2xl">
+        <h3 className="px-8 md:px-12 pt-4 pb-8 font-semibold text-center text-xl sm:text-2xl text-Gray-dark">
           {title}
         </h3>
       )}
@@ -34,7 +36,7 @@ const GalleryList = ({ pictures, onModalOpen, title }: GalleryListType) => {
         <button
           onClick={handleClick}
           data-button="left"
-          className="absolute px-2 py-1 bg-Accent-dark font-bold opacity-50 hover:opacity-100 rounded-lg top-1/2 left-4 2xl:left-20 text-4xl md:text-5xl z-10 text-white"
+          className="absolute px-2 py-1 bg-Accent-dark font-bold opacity-50 hover:opacity-100 rounded-lg top-1/2 left-4 2xl:left-20 text-2xl md:text-4xl z-10 text-white"
           type="button"
         >
           &#8656;
@@ -42,7 +44,7 @@ const GalleryList = ({ pictures, onModalOpen, title }: GalleryListType) => {
         <button
           onClick={handleClick}
           data-button="right"
-          className="absolute px-2 py-1 bg-Accent-dark font-bold opacity-50 hover:opacity-100 rounded-lg top-1/2 right-4 2xl:right-20 text-4xl md:text-5xl z-10 text-white"
+          className="absolute px-2 py-1 bg-Accent-dark font-bold opacity-50 hover:opacity-100 rounded-lg top-1/2 right-4 2xl:right-20 text-2xl md:text-4xl z-10 text-white"
           type="button"
         >
           &#8658;

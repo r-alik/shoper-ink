@@ -32,6 +32,8 @@ const Testimonial = ({
 const Testimonials = () => {
   return (
     <Container idName="testimonials">
+      <HorizontalDivider />
+
       <SectionTitle title="Відгуки" imageLink="/icons/feedback.svg" />
 
       <p className="standard-text md:text-[1.5rem] text-Gray-dark md:mb-1">
