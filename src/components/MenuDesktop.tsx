@@ -1,20 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import { menu, menuItem } from '../data/menuItem';
 
 const MenuDesktop = () => {
   const [menuItems, setMenuItems] = useState<menuItem[]>(menu);
+  const observers = useRef<IntersectionObserver | null>(null);
+  const [active, setActive] = useState<string>('');
+
+  let anchors: NodeListOf<Element> | null;
 
   const getHashValue = () => location.hash || '#';
 
   const hashChangeHandler = () => {
-    updateMenu();
+    updateMenu(getHashValue());
   };
 
-  function updateMenu() {
+  function updateMenu(currentLocation: string) {
     return setMenuItems(prev => {
       return prev.map(item => {
-        return item.href === getHashValue()
+        return item.href === currentLocation
           ? { ...item, isActive: true }
           : { ...item, isActive: false };
       });
@@ -23,13 +27,38 @@ const MenuDesktop = () => {
 
   useEffect(() => {
     window.addEventListener('hashchange', hashChangeHandler);
+    anchors = document.querySelectorAll('[data-anchor]');
 
-    updateMenu();
+    updateMenu(getHashValue());
+
+    observers.current = new IntersectionObserver(entries => {
+      const visible = entries.find(e => e.isIntersecting)?.target;
+      if (visible) {
+        setActive(visible.id);
+      }
+    });
+
+    anchors?.forEach(a => {
+      observers?.current?.observe(a);
+    });
 
     return () => {
       window.removeEventListener('hashchange', hashChangeHandler);
+
+      anchors?.forEach(a => {
+        observers.current?.unobserve(a);
+      });
     };
   }, []);
+
+  useEffect(() => {
+    const url = new URL(location.href);
+    url.hash = active;
+
+    history.pushState({}, '', url);
+
+    updateMenu(getHashValue());
+  }, [active]);
 
   return (
     <nav>
@@ -60,47 +89,3 @@ function MenuItem({ menuDetails }: { menuDetails: menuItem }) {
 }
 
 export default MenuDesktop;
-
-/*
-
-  const sections = document.querySelectorAll('section');
-
-  const handleScroll = () => {
-    let currentSection = '';
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const scrollPosition = window.scrollY + 64;
-
-      if (
-        scrollPosition >= sectionTop &&
-        scrollPosition < sectionTop + sectionHeight
-      ) {
-        currentSection = section.id;
-      }
-    });
-
-    menuItems.forEach(item => {
-      const anchor = document.querySelector(`a[href="${item.href}"]`);
-      if (anchor) {
-        anchor.setAttribute('href', item.href);
-      }
-    });
-
-    activeSection = currentSection;
-    if(currentSection !== a)
-    // setActiveSection();
-    // setHash(currentSection);
-
-    // = (event: Event) =>
-    // const t = e.target as Document;
-    // console.log(t.body?.clientHeight);
-    // console.log(window.scrollY);
-  };
-
-
-        // window.addEventListener('scroll', handleScroll);
-      // window.removeEventListener('scroll', handleScroll);
-
-*/

@@ -22,6 +22,7 @@ const JuteAndJute = ({
   return (
     <div
       id="juteAndJute"
+      data-anchor="juteAndJute"
       className="margin-bottom scroll-mt-16 lg:scroll-mt-[84px]"
     >
       <Container>

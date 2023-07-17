@@ -14,6 +14,7 @@ const WineBags = ({
   return (
     <div
       id="winebags"
+      data-anchor="winebags"
       className="margin-bottom scroll-mt-16 lg:scroll-mt-[84px]"
     >
       <Container>
